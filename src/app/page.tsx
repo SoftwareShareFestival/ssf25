@@ -19,7 +19,7 @@ export default function Home() {
 			<Hero />
 			<div
 				style={{
-					paddingBlock: 70,
+					padding: '70px 0 40px 0',
 					display: 'flex',
 					flexDirection: 'column',
 					alignContent: 'center',

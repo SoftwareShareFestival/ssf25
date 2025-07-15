@@ -24,17 +24,17 @@ export default function Footer() {
 				<VStack gap={32}>
 					<VStack gap={8}>
 						<span className={s.sectionName}>후원</span>
-						<HStack gap={22}>
+						<HStack gap={24}>
 							<Image
 								src={'/yongsan-gu.png'}
-								width={94}
-								height={24}
+								width={110}
+								height={28}
 								alt="선린인터넷고등학교 로고"
 							/>
 							<Image
 								src={'/cyber_guardians.png'}
-								width={122}
-								height={24}
+								width={140}
+								height={28}
 								alt="선린인터넷고등학교 로고"
 							/>
 						</HStack>
