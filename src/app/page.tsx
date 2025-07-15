@@ -1,4 +1,4 @@
-import { Hero, ShowReel, WithClub } from '@/components/home';
+import { Hero, Schedule, ShowReel, WithClub } from '@/components/home';
 import { Header } from '@/components/ui';
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
 		{ id: 6, src: '/club/teamlog.png' },
 		{ id: 7, src: '/club/unifox.png' },
 		{ id: 8, src: '/club/iris.png' },
+		{ id: 9, src: '/club/layer7.png' },
 	];
 	return (
 		<>
@@ -21,11 +22,13 @@ export default function Home() {
 					paddingBlock: 70,
 					display: 'flex',
 					flexDirection: 'column',
+					alignContent: 'center',
 					gap: 169,
 				}}
 			>
 				<WithClub items={carouselItems} speed={0.5} />
 				<ShowReel />
+				<Schedule />
 			</div>
 		</>
 	);
