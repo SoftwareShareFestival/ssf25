@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+
+    color: $color-primary;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.list {
+    width: min(100%, $max-width);
+
+    column-gap: 20px;
+    row-gap: 40px;
+
+    padding: 0 30px;
+}
+
+.filterButton {
+    padding: 15px 25px;
+
+    color: #838383;
+    background-color: white;
+
+    border: 1px solid #E6E6E6;
+    border-radius: 999px;
+
+    font-size: 18px;
+}
+
+.active {
+    background-color: $color-primary;
+    color: white;
+}

@@ -1,4 +1,11 @@
-import { Hero, Schedule, ShowReel, WithClub, Introduce } from '@/components/home';
+import {
+	Hero,
+	Schedule,
+	ShowReel,
+	WithClub,
+	Introduce,
+	ClubList,
+} from '@/components/home';
 import { FAQ, Footer, Header, InformationCard } from '@/components/ui';
 
 export default function Home() {
@@ -44,6 +51,7 @@ export default function Home() {
 					description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
 					imageSrc="/food.png"
 				/>
+				<ClubList />
 				<Schedule />
 				<FAQ />
 				<Footer />
