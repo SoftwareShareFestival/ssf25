@@ -2,7 +2,7 @@ import { HStack } from '@/components/ui/hstack';
 import Image from 'next/image';
 
 import s from './style.module.scss';
-import { FilePen, Instagram } from 'lucide-react';
+import { FilePen } from 'lucide-react';
 import cn from 'classnames';
 import Link from 'next/link';
 import { VStack } from '@/components/ui';
