@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+}
+
+.container {
+    width: min(100%, $max-width);
+
+    margin: 0 auto;
+}
+
+.additionInfo {
+    color: #808080;
+
+    line-height: 32px;
+}
+
+.sectionName {
+    color: #9A9A9A;
+}
