@@ -1,4 +1,4 @@
-import { Hero, WithClub } from '@/components/home';
+import { Hero, ShowReel, WithClub } from '@/components/home';
 import { Header } from '@/components/ui';
 
 export default function Home() {
@@ -16,8 +16,16 @@ export default function Home() {
 		<>
 			<Header />
 			<Hero />
-			<div style={{ paddingBlock: 70 }}>
+			<div
+				style={{
+					paddingBlock: 70,
+					display: 'flex',
+					flexDirection: 'column',
+					gap: 169,
+				}}
+			>
 				<WithClub items={carouselItems} speed={0.5} />
+				<ShowReel />
 			</div>
 		</>
 	);
