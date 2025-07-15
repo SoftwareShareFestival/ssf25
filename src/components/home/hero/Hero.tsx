@@ -18,7 +18,7 @@ export default function Hero() {
 					alt="선린인터넷고등학교 하얀색 로고"
 				/>
 				<h1 className={s.title}>
-					소프트웨어 ㅇㅇ의 시작
+					소프트웨어 도약의 시작
 					<br />
 					SSF25에 오신것을 환영합니다
 				</h1>
