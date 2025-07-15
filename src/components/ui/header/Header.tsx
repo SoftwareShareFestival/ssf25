@@ -12,7 +12,7 @@ export default function Header() {
 					src={'/ssf_white.svg'}
 					height={22}
 					width={55}
-					alt="SSF25 white logo"
+					alt="SSF25 하얀색 로고"
 				/>
 				<HeaderNav />
 				<button className={s.submitButton}>

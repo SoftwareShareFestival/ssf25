@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 32px;
+
+    background-color: $color-primary;
+
+    padding: 50px 10px;
+
+    background-image: url("/dot_primary.png");
+    background-size: 20px;
+}
+
+.title {
+    font-size: 52px;
+    text-align: center;
+
+    color: white;
+
+    margin: 30px 0 0 0 ;
+}
+
+.description {
+    opacity: 0.7;
+
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+
+    color: white;
+}
+
+.submit {
+    background-color: white;
+
+    padding: 20px 30px;
+
+    border-radius: 9999px;
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    & > svg {
+       color: $color-primary; 
+    }
+
+    & > span {
+        font-size: 18px;
+        font-weight: 500;
+
+        letter-spacing: -.5px;
+
+        color: $color-primary;
+    }
+}
+
+.instagram {
+    background-color: #FE774D;
+
+    & > svg {
+       color: white; 
+    }
+
+    & > span {
+        color: white;
+    }
+}
