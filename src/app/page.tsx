@@ -1,4 +1,4 @@
-import { Hero, Schedule, ShowReel, WithClub } from '@/components/home';
+import { Hero, Schedule, ShowReel, WithClub, Introduce } from '@/components/home';
 import { FAQ, Footer, Header, InformationCard } from '@/components/ui';
 
 export default function Home() {
@@ -27,6 +27,7 @@ export default function Home() {
 				}}
 			>
 				<WithClub items={carouselItems} speed={0.5} />
+				<Introduce />
 				<ShowReel />
 				<InformationCard
 					title="각 동아리에서 준비한 체계적인 커리큘럼을 경험해보세요!"
