@@ -1,5 +1,5 @@
 import { Hero, Schedule, ShowReel, WithClub } from '@/components/home';
-import { Footer, Header, InformationCard } from '@/components/ui';
+import { FAQ, Footer, Header, InformationCard } from '@/components/ui';
 
 export default function Home() {
 	const carouselItems = [
@@ -44,6 +44,7 @@ export default function Home() {
 					imageSrc="/food.png"
 				/>
 				<Schedule />
+				<FAQ />
 				<Footer />
 			</div>
 		</>
