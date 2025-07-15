@@ -1,28 +1,8 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local'
-
+import localFont from 'next/font/local';
 
 import '@/styles/global.scss';
-
-export const paperlogy = localFont({
-  src: [
-    {
-      path: '../../public/fonts/Paperlogy-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },  
-    {
-      path: '../../public/fonts/Paperlogy-Medium.ttf',
-      weight: '500',
-      style: 'normal'
-    },  
-    {
-      path: '../../public/fonts/Paperlogy-SemiBold.ttf',
-      weight: '600',
-      style: 'normal'
-    }
-  ]
-})
+import { paperlogy } from '@/utils/font';
 
 export const metadata: Metadata = {
 	title: '2025 소프트웨어나눔축제',
@@ -36,9 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${paperlogy.className}`}>
-				{children}
-			</body>
+			<body className={`${paperlogy.className}`}>{children}</body>
 		</html>
 	);
 }

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import s from './style.module.scss';
 import { Flex } from '@/components/ui';
-import { paperlogy } from '@/app/layout';
 import HeaderNav from './nav';
+import { paperlogy } from '@/utils/font';
 
 export default function Header() {
 	return (
