@@ -6,3 +6,13 @@ body, html {
 * {
     box-sizing: border-box;
 }
+
+button:hover {
+    opacity: 0.8;
+
+    transform: scale(0.97);
+
+    transition: all 0.2s ease-in-out;
+
+    cursor: pointer;
+}
