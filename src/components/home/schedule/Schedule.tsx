@@ -41,7 +41,10 @@ export default function Schedule() {
 					</span>
 				</div>
 			</HStack>
-			<Link href="https://calendar.google.com/calendar/u/0?cid=Njc3ODU2NTY2OWIxMDdiN2E4Mjg4ZTUzZTRiMDNlYzU4NDAyMjc3NTMzN2M4MzVhZDA1Nzk5NzQwYzFiNzdkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t">
+			<Link
+				href="https://calendar.google.com/calendar/u/0?cid=Njc3ODU2NTY2OWIxMDdiN2E4Mjg4ZTUzZTRiMDNlYzU4NDAyMjc3NTMzN2M4MzVhZDA1Nzk5NzQwYzFiNzdkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+				target="_blank"
+			>
 				<Image
 					src={'/calendar.svg'}
 					width={30}

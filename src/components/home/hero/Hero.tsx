@@ -10,7 +10,7 @@ import { VStack } from '@/components/ui';
 export default function Hero() {
 	return (
 		<div className={s.container}>
-			<VStack gap={12} align='center'>
+			<VStack gap={12} align="center">
 				<Image
 					src={'/sunrin_white.svg'}
 					width={180}
@@ -33,7 +33,11 @@ export default function Hero() {
 					<FilePen size={22} />
 					<span>SSF 지원하기</span>
 				</Link>
-				<Link href={'sa'} className={cn(s.submit, s.instagram)}>
+				<Link
+					href={'https://www.instagram.com/sunrin_ssf/'}
+					target='_blank'
+					className={cn(s.submit, s.instagram)}
+				>
 					<Image
 						src={'/instagram.svg'}
 						width={22}
