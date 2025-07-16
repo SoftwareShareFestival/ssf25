@@ -46,7 +46,7 @@ export default function Home() {
 				<InformationCard
 					title="각 동아리에서 준비한 굿즈도 있어요"
 					description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
-					imageSrc="/food.png"
+					imageSrc="/goods.png"
 				/>
 				<InformationCard
 					title="각 동아리에서 준비한 굿즈도 있어요"
