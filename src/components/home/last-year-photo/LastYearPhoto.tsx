@@ -16,7 +16,6 @@ export default function LastYearPhoto() {
 			</VStack>
 			<HStack className={s.list}>
 				{LastYearPhotoList.map((image, index) => {
-					console.log(index);
 					if (index === 0) {
 						return (
 							<VStack>
