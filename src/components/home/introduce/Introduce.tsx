@@ -16,6 +16,7 @@ export default function Introduce() {
 소프트웨어에 대한 경험을 나누고, 다양한 소프트웨어를 직접 만들고 
 체험해볼 수 있는 행사입니다.</p>
             </VStack>
+            <img src={'/introduce_tree.svg'}/>
         </HStack>
     )   
 }
