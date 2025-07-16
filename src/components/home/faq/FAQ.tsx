@@ -119,21 +119,21 @@ export default function FAQ() {
 					))}
 				</VStack>
 			</VStack>
-			<VStack className={s.callContainer} gap={40}>
+			<VStack className={s.callContainer} gap={30}>
 				<VStack gap={16} align="start">
 					<span className={s.callTitle}>참가 신청 문의</span>
-					<HStack gap={8} align="center">
+					<HStack gap={10} align="center">
 						<PhoneCall className={s.icon} size={18} />
-						<span className={s.phone}>02-717-4616 (선린인고 홍보부)</span>
+						<span className={s.phone}>02-717-4616 (홍보부)</span>
 					</HStack>
 				</VStack>
-				<VStack gap={16} align="start">
-					<span className={s.callTitle}>체험 내용 문의</span>
-					<HStack gap={8} align="center">
-						<PhoneCall className={s.icon} size={18} />
-						<span className={s.phone}>070-4459-9047 (소프트웨어과)</span>
-					</HStack>
-				</VStack>
+				<HStack gap={10}>
+					<PhoneCall className={s.icon} size={18} />
+					<VStack gap={12}>
+						<span className={s.phone}>02-713-6216 (정보보호과)</span>
+						<span className={s.phone}>02-713-6219 (소프트웨어과)</span>
+					</VStack>
+				</HStack>
 			</VStack>
 		</section>
 	);
