@@ -3,7 +3,8 @@ export * from './vstack';
 export * from './hstack';
 export * from './header';
 export * from './footer';
+export * from '../home/faq'
 export * from './information-card'
-export * from './faq'
 export * from './camp'
 export * from './spacer'
+export * from './title'

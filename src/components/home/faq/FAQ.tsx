@@ -1,8 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { VStack } from '@/components/ui';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { HStack, Title, VStack } from '@/components/ui';
+import { ChevronDown, ChevronUp, PhoneCall } from 'lucide-react';
 import s from './style.module.scss';
 import cn from 'classnames';
 
@@ -18,22 +18,25 @@ const faqData: FAQItem[] = [
 		id: 1,
 		category: '캠프',
 		question: '참가 신청은 어떻게 하나요?',
-		answer: '참가 신청은 9월 1일부터 9월 7일까지 이 홈페이지에서 신청할 수 있습니다.',
+		answer:
+			'참가 신청은 9월 1일부터 9월 7일까지 이 홈페이지에서 신청할 수 있습니다.',
 	},
 	{
 		id: 2,
 		category: '캠프',
 		question: '중복 지원이 가능한가요?',
-		answer: '1,2,3순위까지 신청할 수 있습니다. 자세한 순위 선정 방법은 아래 질문을 참고해주세요.',
+		answer:
+			'1,2,3순위까지 신청할 수 있습니다. 자세한 순위 선정 방법은 아래 질문을 참고해주세요.',
 	},
 	{
 		id: 3,
 		category: '캠프',
 		question: '선정 기준이 어떻게 되나요?',
-		answer: '중학교 3학년을 우선으로, 그다음 용산구청 관내 중학교 재학생, 이후에는 선착순으로 선정됩니다.',
+		answer:
+			'중학교 3학년을 우선으로, 그다음 용산구청 관내 중학교 재학생, 이후에는 선착순으로 선정됩니다.',
 	},
 	{
-		id: 4,	
+		id: 4,
 		category: '캠프',
 		question: '참가 신청이 제대로 되었는지 궁금해요!',
 		answer: '참가 신청 완료 후 등록하신 이메일로 확인 메일이 발송됩니다.',
@@ -62,24 +65,26 @@ export default function FAQ() {
 	const [openItems, setOpenItems] = useState<number[]>([]);
 
 	const toggleItem = (id: number) => {
-		setOpenItems(prev =>
-			prev.includes(id)
-				? prev.filter(item => item !== id)
-				: [...prev, id]
+		setOpenItems((prev) =>
+			prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
 		);
 	};
 
 	return (
 		<section className={s.container}>
-			<VStack gap={50} align="center" fullWidth>
-				<h3 className={s.title}>자주 묻는 질문</h3>
-				
+			<VStack gap={36} fullWidth>
+				<Title
+					title="자주 묻는 질문"
+					description="학생들이 자주 묻는 질문들을 모아봤어요"
+					align="start"
+				/>
+
 				<VStack gap={16} className={s.faqList}>
 					{faqData.map((item) => (
 						<div
 							key={item.id}
 							className={cn(s.faqItem, {
-								[s.active]: openItems.includes(item.id)
+								[s.active]: openItems.includes(item.id),
 							})}
 						>
 							<button
@@ -87,7 +92,11 @@ export default function FAQ() {
 								onClick={() => toggleItem(item.id)}
 							>
 								<div className={s.questionContent}>
-									<span className={cn(s.category, { [s.etc]: item.category === '기타' })}>
+									<span
+										className={cn(s.category, {
+											[s.etc]: item.category === '기타',
+										})}
+									>
 										{item.category}
 									</span>
 									<span className={s.question}>{item.question}</span>
@@ -100,7 +109,7 @@ export default function FAQ() {
 									)}
 								</div>
 							</button>
-							
+
 							{openItems.includes(item.id) && (
 								<div className={s.answerWrapper}>
 									<p className={s.answer}>{item.answer}</p>
@@ -109,6 +118,22 @@ export default function FAQ() {
 						</div>
 					))}
 				</VStack>
+			</VStack>
+			<VStack className={s.callContainer} gap={30}>
+				<VStack gap={16} align="start">
+					<span className={s.callTitle}>참가 신청 문의</span>
+					<HStack gap={10} align="center">
+						<PhoneCall className={s.icon} size={18} />
+						<span className={s.phone}>02-717-4616 (홍보부)</span>
+					</HStack>
+				</VStack>
+				<HStack gap={10}>
+					<PhoneCall className={s.icon} size={18} />
+					<VStack gap={12}>
+						<span className={s.phone}>02-713-6216 (정보보호과)</span>
+						<span className={s.phone}>02-713-6219 (소프트웨어과)</span>
+					</VStack>
+				</HStack>
 			</VStack>
 		</section>
 	);
