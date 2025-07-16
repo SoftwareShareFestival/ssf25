@@ -3,7 +3,7 @@ import s from './style.module.scss'
 
 export default function Introduce() {
     return (
-        <HStack className={s.container} align="center" justify="between">
+        <HStack className={s.container} align="center" justify="between" >
             <VStack
                 gap={22}
                 justify="start"

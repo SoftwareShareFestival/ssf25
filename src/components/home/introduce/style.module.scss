@@ -1,6 +1,7 @@
 .container {
-    width: 100%;
-    
+    width: min(100%, $max-width);
+    padding: 0 30px;
+
 }
 
 .title {
