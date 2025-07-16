@@ -5,7 +5,6 @@ import {
 	WithClub,
 	Introduce,
 	ClubList,
-	Call,
 	LastYearPhoto,
 } from '@/components/home';
 import { FAQ, Footer, Header, InformationCard, Spacer } from '@/components/ui';
@@ -58,7 +57,6 @@ export default function Home() {
 				<ClubList />
 				<Schedule />
 				<FAQ />
-				<Call />
 				<Footer />
 			</div>
 		</>

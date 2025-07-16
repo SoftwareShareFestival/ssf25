@@ -1,6 +1,6 @@
 'use client';
 
-import { VStack } from '@/components/ui';
+import { Title, VStack } from '@/components/ui';
 import s from './style.module.scss';
 import cn from 'classnames';
 import { HStack } from '@/components/ui/hstack';
@@ -10,12 +10,10 @@ import Link from 'next/link';
 export default function Schedule() {
 	return (
 		<section className={s.container}>
-			<VStack gap={22} align="center">
-				<h3 className={s.title}>캠프 일정</h3>
-				<h4 className={s.description}>
-					지원을 통해 지원자를 선발 후 캠프를 진행합니다!
-				</h4>
-			</VStack>
+			<Title
+				title="캠프 일정"
+				description="지원을 통해 지원자를 선발 후 캠프를 진행합니다!"
+			/>
 			<HStack className={s.visualize} align="center">
 				<div className={s.circle}>
 					<span>

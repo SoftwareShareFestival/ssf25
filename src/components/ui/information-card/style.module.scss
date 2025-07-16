@@ -1,108 +1,15 @@
 .container {
-    width: min(100%, $max-width);
+    width: min(100%, 1050px);
 
     margin: 0 auto;
-    padding: 0 30px;
 }
 
 .title {
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-
-    color: $color-primary;
+    font-size: 28px;
 }
 
-.faqList {
-    width: 100%;
-    max-width: 800px;
-}
-
-.faqItem {
-    width: 100%;
-    background-color: #f5f5f5;
-
-    border-radius: 12px;
-
-    overflow: hidden;
-
-    transition: all 0.3s ease;
-}
-
-.questionButton {
-    width: 100%;
-
-    padding: 16px 24px;
-
-    border: none;
-    background: none;
-
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    
-    transition: all 0.2s ease;
-}
-
-.questionContent {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    flex: 1;
-}
-
-.category {
-    font-size: 16px;
-    font-weight: 600;
-
-    flex-shrink: 0;
-
-    color: $color-primary;
-}
-
-.question {
+.description {
     font-size: 18px;
-    font-weight: 500;
-    color: #333;
-    line-height: 1.4;
-}
 
-.iconWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    background-color: rgba(254, 85, 33, 0.1);
-    color: $color-primary;
-    flex-shrink: 0;
-    
-    .faqItem.active & {
-        background-color: $color-primary;
-        color: white;
-    }
-}
-
-.answerWrapper {
-    padding: 0 24px 24px 24px;
-
-    border-top: 1px solid #f0f0f0;
-    
-    animation: slideDown 0.3s ease;
-}
-
-.answer {
-    margin: 0;
-    padding-top: 20px;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-}
-
-.etc {
-    color: #888;
+    color: #666666;
 }
