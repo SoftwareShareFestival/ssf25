@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+
+    color: $color-primary;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 400;
+    color: #666666;
+}
+
+.list {
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 60px;
+    row-gap: 80px;
+
+    & > img {
+        border-radius: 16px;
+
+        object-fit: cover;
+    }
+
+    & > :nth-child(odd) {
+        border: 5px solid #FFD3B3;
+        transform: rotate(-9deg);
+    }
+
+     & > :nth-child(even) {
+        border: 5px solid #FF825A;
+        transform: rotate(9deg);
+    }
+}
