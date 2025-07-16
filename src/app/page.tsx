@@ -37,7 +37,6 @@ export default function Home() {
 				}}
 			>
 				<WithClub items={carouselItems} speed={0.5} />
-				<Call />
 				<Introduce />
 				<ShowReel />
 				<LastYearPhoto />
@@ -59,6 +58,7 @@ export default function Home() {
 				<ClubList />
 				<Schedule />
 				<FAQ />
+				<Call />
 				<Footer />
 			</div>
 		</>
