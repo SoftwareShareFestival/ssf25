@@ -34,12 +34,12 @@
     }
 
     & > :nth-child(odd) {
-        border: 5px solid #FFD3B3;
+        border: 4px solid #FFD3B3;
         transform: rotate(-9deg);
     }
 
      & > :nth-child(even) {
-        border: 5px solid #FF825A;
+        border: 4px solid #FF825A;
         transform: rotate(9deg);
     }
 }
