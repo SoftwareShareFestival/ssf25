@@ -87,7 +87,7 @@ export default function FAQ() {
 								onClick={() => toggleItem(item.id)}
 							>
 								<div className={s.questionContent}>
-									<span className={s.category}>
+									<span className={cn(s.category, { [s.etc]: item.category === '기타' })}>
 										{item.category}
 									</span>
 									<span className={s.question}>{item.question}</span>
