@@ -33,7 +33,7 @@ const faqData: FAQItem[] = [
 		category: '캠프',
 		question: '선정 기준이 어떻게 되나요?',
 		answer:
-			'중학교 3학년을 우선으로, 그다음 용산구청 관내 중학교 재학생, 이후에는 선착순으로 선정됩니다.',
+			'전국 중학교 3학년을 우선으로, 그다음 용산구청 관내 중학교 재학생, 이후에는 선착순으로 선정됩니다.',
 	},
 	{
 		id: 4,
@@ -57,7 +57,7 @@ const faqData: FAQItem[] = [
 		id: 7,
 		category: '기타',
 		question: '다른 궁금한 점은 어떻게 질문하나요?',
-		answer: 'SSF 인스타그램 DM 또는 아래 연락처로 문의 부탁드립니다.',
+		answer: 'SSF 인스타그램(@sunrin_ssf) DM 또는 오른쪽 연락처로 문의 부탁드립니다.',
 	},
 ];
 
