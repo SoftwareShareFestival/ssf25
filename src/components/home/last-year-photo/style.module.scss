@@ -27,19 +27,42 @@
     gap: 60px;
     row-gap: 80px;
 
-    & > img {
+    .photo {
         border-radius: 16px;
 
         object-fit: cover;
     }
 
-    & > :nth-child(odd) {
+    & > .photo:nth-child(odd) {
         border: 4px solid #FFD3B3;
         transform: rotate(-9deg);
     }
 
-     & > :nth-child(even) {
+    & > .photo:nth-child(even) {
         border: 4px solid #FF825A;
         transform: rotate(9deg);
     }
+}
+
+.firstPhoto {
+    border: 4px solid #FFD3B3;
+    transform: rotate(-9deg);
+
+    margin-top: -10px;
+}
+
+.arrow > span {
+    color: #7B7B7B;
+
+    transform: rotate(-4deg);
+}
+
+.leftArrow {
+    & > img {
+        transform: rotate(270deg);
+    }
+}
+
+.rightArrow {
+    margin-left: -30px;
 }
