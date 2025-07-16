@@ -7,7 +7,7 @@ import {
 	ClubList,
 	Call,
 } from '@/components/home';
-import { FAQ, Footer, Header, InformationCard } from '@/components/ui';
+import { FAQ, Footer, Header, InformationCard, Spacer } from '@/components/ui';
 
 export default function Home() {
 	const carouselItems = [
@@ -24,6 +24,7 @@ export default function Home() {
 	return (
 		<>
 			<Header />
+			<Spacer height={62} />
 			<Hero />
 			<div
 				style={{
