@@ -22,6 +22,10 @@ export default function Schedule() {
 					<span className={s.title}>체험 내용 문의</span>
 					<HStack gap={8}>
 						<PhoneCall className={s.icon} size={20} />
+						<span className={s.phone}>02-713-6216 (정보보호과)</span>
+					</HStack>
+					<HStack gap={8}>
+						<PhoneCall className={s.icon} size={20} />
 						<span className={s.phone}>02-713-6219 (소프트웨어과)</span>
 					</HStack>
 				</VStack>
