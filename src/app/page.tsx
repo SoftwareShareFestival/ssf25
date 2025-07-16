@@ -5,6 +5,7 @@ import {
 	WithClub,
 	Introduce,
 	ClubList,
+	Call,
 } from '@/components/home';
 import { FAQ, Footer, Header, InformationCard } from '@/components/ui';
 
@@ -34,6 +35,7 @@ export default function Home() {
 				}}
 			>
 				<WithClub items={carouselItems} speed={0.5} />
+				<Call />
 				<Introduce />
 				<ShowReel />
 				<InformationCard
