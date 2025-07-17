@@ -129,13 +129,12 @@ export default function FAQ() {
 				</VStack>
 				<VStack gap={12} align="start">
 					<span className={s.callTitle}>체험 내용 문의</span>
-					<HStack gap={10} align="center">
+					<HStack gap={10} align="start">
 						<PhoneCall className={s.icon} size={18} />
-						<span className={s.phone}>02-713-6216 (정보보호과)</span>
-					</HStack>
-					<HStack gap={10} align="center">
-						<span style={{ display: 'inline-block', width: 18 }} />
-						<span className={s.phone}>02-713-6219 (소프트웨어과)</span>
+						<VStack gap={8}>
+							<span className={s.phone}>02-713-6216 (정보보호과)</span>
+							<span className={s.phone}>02-713-6219 (소프트웨어과)</span>
+						</VStack>
 					</HStack>
 				</VStack>
 			</VStack>
