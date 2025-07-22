@@ -14,7 +14,6 @@ export default function Header() {
 					width={55}
 					alt="SSF25 하얀색 로고"
 				/>
-				<HeaderNav />
 				<button className={s.submitButton}>
 					<a href="a" style={paperlogy.style}>
 						지원하기
