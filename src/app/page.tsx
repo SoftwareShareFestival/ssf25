@@ -7,7 +7,14 @@ import {
 	ClubList,
 	LastYearPhoto,
 } from '@/components/home';
-import { FAQ, Footer, Header, InformationCard, Spacer } from '@/components/ui';
+import {
+	FAQ,
+	Footer,
+	Header,
+	InformationCard,
+	Spacer,
+	VStack,
+} from '@/components/ui';
 
 export default function Home() {
 	const carouselItems = [
@@ -39,21 +46,23 @@ export default function Home() {
 				<Introduce />
 				<ShowReel />
 				<LastYearPhoto />
-				<InformationCard
-					title="각 동아리에서 준비한 체계적인 커리큘럼을 경험해보세요!"
-					description="체계화된 캠프별 커리큘럼을 통해 중학생들도 쉽게 소프트웨어 관련 경험을 깊이 있게 쌓아갈 수 있습니다."
-					imageSrc="/food.png"
-				/>
-				<InformationCard
-					title="각 동아리에서 준비한 굿즈도 있어요"
-					description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
-					imageSrc="/goods.png"
-				/>
-				<InformationCard
-					title="각 동아리에서 준비한 굿즈도 있어요"
-					description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
-					imageSrc="/food.png"
-				/>
+				<VStack gap={64} style={{margin: '0 auto'}}>
+					<InformationCard
+						title="각 동아리에서 준비한 체계적인 커리큘럼을 경험해보세요!"
+						description="체계화된 캠프별 커리큘럼을 통해 중학생들도 쉽게 소프트웨어 관련 경험을 깊이 있게 쌓아갈 수 있습니다."
+						imageSrc="/food.png"
+					/>
+					<InformationCard
+						title="각 동아리에서 준비한 굿즈도 있어요"
+						description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
+						imageSrc="/goods.png"
+					/>
+					<InformationCard
+						title="각 동아리에서 준비한 굿즈도 있어요"
+						description="쉬는 시간엔 재학생에게서 소프트웨어와 학교 생활에 대한 경험을 들을 수 있습니다."
+						imageSrc="/food.png"
+					/>
+				</VStack>
 				<ClubList />
 				<Schedule />
 				<FAQ />
