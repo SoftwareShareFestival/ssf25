@@ -15,17 +15,20 @@ export default function Hero() {
 					src={'/sunrin_white.svg'}
 					width={180}
 					height={24}
+					style={{ marginBottom: 24 }}
+					alt="선린인터넷고등학교 하얀색 로고"
+				/>
+				<Image
+					src={'/orange_logo.svg'}
+					width={405}
+					height={145}
 					alt="선린인터넷고등학교 하얀색 로고"
 				/>
 				<h1 className={s.title}>
-					소프트웨어 도약의 시작
-					<br />
-					SSF25에 오신것을 환영합니다
+					2025 Software Share Festival
 				</h1>
 				<h2 className={s.description}>
-					SSF는 소프트웨어에 대한 경험을 나누고,
-					<br />
-					다양한 소프트웨어를 직접 체험해볼 수 있는 행사입니다
+					소프트웨어 도약의 시작 SSF25에 오신것을 환영합니다
 				</h2>
 			</VStack>
 			<HStack gap={18}>
