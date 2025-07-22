@@ -3,6 +3,7 @@
 import { VStack } from '@/components/ui';
 import s from './style.module.scss';
 import Introduce from '@/components/camp/introduce';
+import Club from '@/components/camp/club';
 
 export default function CampClient({ clubInfo }: { clubInfo: any }) {
     if (!clubInfo) {
@@ -33,6 +34,14 @@ export default function CampClient({ clubInfo }: { clubInfo: any }) {
                 imageSrc={clubInfo.imageSrc}
                 link={clubInfo.link}
                 club={clubInfo.club}
+            />
+            <Club
+                name={clubInfo.club.name}
+                description={clubInfo.club.description}
+                logo={clubInfo.club.logo}
+                tags={clubInfo.club.tags}
+                color={clubInfo.club.color}
+                link={clubInfo.club.link}
             />
         </VStack>
     );

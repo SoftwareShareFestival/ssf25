@@ -8,6 +8,7 @@ interface CampInfo {
         cardnews: string;
     };
     club: {
+        color: string;
         name: string;
         tags: string[];
         description: string;
@@ -22,7 +23,7 @@ interface CampInfo {
 export const campData: CampInfo[] = [
     {
         title: "Chrome 해킹해서 친구 검색기록 홈쳐보기",
-        description: "We Hack the Universe, 해킹을 통해 세상의 경계를 넓히는 Layer7입니다. 25년의 역사를 가지고 웹 해킹·리버스 엔지니어링·시스템 해킹 등 폭넓은 보안 분야를 탐구해 왔습니다...",
+        description: "브라우저를 직접 해킹하고, 해커의 입장에서 사용자의 정보가 어떻게 탈취되는지 체험해보세요. 공격자의 시선을 통해 보안을 이해하고, 실생활에서 나를 지킬 수 있는 방법까지 함께 배워봅니다.",
         imageSrc: "/camp/layer7.png",
         link: {
             share: "https://www.youtube.com/",
@@ -30,13 +31,14 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "Layer7",
-            tags: ["해킹", "보안", "CTF"],
-            description: "We Hack the Universe, 해킹을 통해 세상의 경계를 넓히는 Layer7입니다...",
+            tags: ["해킹", "Chrome", "피싱", "윤리"],
+            description: "We Hack the Universe, 해킹을 통해 세상의 경계를 넓히는 Layer7입니다. 25년의 역사를 가지고 웹 해킹·리버스 엔지니어링·시스템 해킹 등 폭넓은 보안 분야를 탐구해 왔습니다. 동아리에서 활동하며 역량을 키운 우리는 그 실력을 바탕으로 DEFCON과 CODEGATE CTF 같은 세계적 대회에서 수상했으며, CODEGATE 국제 해킹 컨퍼런스 무대에서 자체 연구 프로젝트를 발표하는 등 우수한 성과를 거두고 있습니다.",
             logo: "/club/layer7.png",
             link: {
                 website: "https://layer7.kr/",
-                instagram: "https://www.instagram.com/layer7_official/"
+                instagram: "https://instagram.com/sunrin_layer7"
             }
         }
     },
@@ -50,13 +52,14 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "IRIS",
-            tags: ["IoT", "하드웨어", "임베디드"],
-            description: "정보보호 동아리 IRIS입니다...",
+            tags: ["Rc카", "사물인터넷", "리눅스", "라즈베리파이"],
+            description: "IRIS는 선린인터넷고등학교 정보보호과의 전공 동아리로, IoT와 인공지능에 관심 있는 학생들이 모여 활동하고 있습니다. 저희는 C언어와 파이썬을 기반으로 프로그래밍을 배우며, 라즈베리파이와 아두이노를 활용해 IoT의 기본 원리와 인공지능의 핵심 개념을 익히고 있습니다",
             logo: "/club/iris.png",
             link: {
-                website: "#",
-                instagram: "https://www.instagram.com/"
+                website: "https://sunrin-iris.kr/",
+                instagram: "https://www.instagram.com/sunrin_iris/"
             }
         }
     },
@@ -70,6 +73,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "TeamLog",
             tags: ["게임개발", "JavaScript", "HTML5"],
             description: "게임 개발 동아리 TeamLog입니다...",
@@ -90,6 +94,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "Unifox",
             tags: ["유니티", "게임개발", "C#"],
             description: "게임 개발 동아리 Unifox입니다...",
@@ -110,6 +115,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "AnA",
             tags: ["웹개발", "React", "프론트엔드"],
             description: "웹 개발 동아리 AnA입니다...",
@@ -130,6 +136,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "C,real",
             tags: ["유니티", "게임개발", "C#"],
             description: "게임 개발 동아리 C,real입니다...",
@@ -150,6 +157,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "TAPIE",
             tags: ["웹게임", "JavaScript", "HTML5"],
             description: "웹 게임 개발 동아리 TAPIE입니다...",
@@ -170,6 +178,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
+            color: "#000",
             name: "PARA",
             tags: ["AI", "머신러닝", "음악추천"],
             description: "AI 연구 동아리 PARA입니다...",
