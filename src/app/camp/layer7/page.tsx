@@ -1,8 +1,13 @@
 'use client';
 import { VStack } from '@/components/ui';
 import s from './style.module.scss';
+import { campData } from '@/data/camp-data';
+import Introduce from '@/components/camp/introduce';
 
 export default function Layer7() {
+
+    const clubName : string = 'Layer7';
+    
     return (
         <VStack 
             className={s.container} 
@@ -11,7 +16,13 @@ export default function Layer7() {
             direction='column' 
             gap={120}
         >
-            <h1>Layer7</h1>
+            <Introduce
+                title={campData[0].title}
+                description={campData[0].description}
+                imageSrc={campData[0].imageSrc}
+                link={campData[0].link}
+                club={campData[0].club}
+            />
         </VStack>
     );
 }

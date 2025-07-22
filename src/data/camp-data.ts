@@ -7,7 +7,7 @@ interface CampInfo {
         reels: string;
         cardnews: string;
     }, 
-    camp:{
+    club:{
         name: string;
         tags : string[];
         description: string;
@@ -29,7 +29,7 @@ export const campData : CampInfo[] = [
             reels : "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "Layer7",
             tags: ["해킹", "보안", "CTF"],
             description: "We Hack the Universe, 해킹을 통해 세상의 경계를 넓히는 Layer7입니다. 25년의 역사를 가지고 웹 해킹·리버스 엔지니어링·시스템 해킹 등 폭넓은 보안 분야를 탐구해 왔습니다.",
@@ -49,7 +49,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "IRIS",
             tags: ["IoT", "하드웨어", "임베디드"],
             description: "정보보호 동아리 IRIS입니다. 보안 분야의 다양한 기술을 연구하고 있습니다.",
@@ -69,7 +69,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "TeamLog",
             tags: ["게임개발", "JavaScript", "HTML5"],
             description: "게임 개발 동아리 TeamLog입니다. 다양한 게임을 개발하며 프로그래밍 실력을 키우고 있습니다.",
@@ -89,7 +89,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "Unifox",
             tags: ["유니티", "게임개발", "C#"],
             description: "게임 개발 동아리 Unifox입니다. 유니티 엔진을 활용한 다양한 게임을 개발하고 있습니다.",
@@ -109,7 +109,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "AnA",
             tags: ["웹개발", "React", "프론트엔드"],
             description: "웹 개발 동아리 AnA입니다. 최신 웹 기술을 연구하고 프로젝트를 진행하고 있습니다.",
@@ -129,7 +129,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "C,real",
             tags: ["유니티", "게임개발", "C#"],
             description: "게임 개발 동아리 C,real입니다. 창의적인 게임을 기획하고 개발하는 동아리입니다.",
@@ -149,7 +149,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "TAPIE",
             tags: ["웹게임", "JavaScript", "HTML5"],
             description: "웹 게임 개발 동아리 TAPIE입니다. 재미있는 웹 기반 게임들을 개발하고 있습니다.",
@@ -169,7 +169,7 @@ export const campData : CampInfo[] = [
             reels: "https://www.instagram.com/",
             cardnews: "https://www.youtube.com/"
         },
-        camp: {
+        club: {
             name: "PARA",
             tags: ["AI", "머신러닝", "음악추천"],
             description: "AI 연구 동아리 PARA입니다. 인공지능과 데이터 과학을 연구하고 프로젝트를 진행하고 있습니다.",
