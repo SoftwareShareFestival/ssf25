@@ -1,6 +1,7 @@
 import { HStack, VStack } from "@/components/ui";
 import s from "./style.module.scss";
 import Tag from "../tag";
+import ClubLink from "../clubLink";
 interface ClubProps {
     name : string;
     description : string;
@@ -36,12 +37,32 @@ export default function Club( props : ClubProps) {
                 >
                     {tags.map((tag) => (
                         <Tag
+                            key={tag}
                             name={tag}
                             color={color}
                         />
                     ))}
                 </HStack>
                 <p className={s.clubDescription}>{description}</p>
+                <HStack
+                    align="center"
+                    justify="end"
+                    gap={22}
+                    fullWidth
+                >
+                    <ClubLink
+                        key="website"
+                        state="website"
+                        link={link.website}
+                        color={color}
+                    />
+                    <ClubLink
+                        key="instagram"
+                        state="instagram"
+                        link={link.instagram}
+                        color={color}
+                    />
+                </HStack>
             </VStack>
         </HStack>
     );
