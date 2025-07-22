@@ -13,15 +13,14 @@ export default function Camp({ club, thumbnail, name }: CampType) {
 					src={thumbnail}
 					width={230}
 					height={350}
-					alt={`${club.name}의 캠프 표지`}
+					alt={`${name}`}
 					className={s.image}
 				/>
 				<VStack gap={10}>
-					<span className={s.title}>{name}</span>
 					<HStack gap={6}>
 						<Image src={club.imageSrc} width={19} height={19} alt={club.name} />
 						<span style={{ color: club.color }} className={s.clubName}>
-							{club.name}
+							{club.name} · {club.description}
 						</span>
 					</HStack>
 				</VStack>
