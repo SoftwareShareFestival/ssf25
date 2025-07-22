@@ -24,6 +24,7 @@ export default function Introduce(props : IntroduceProps) {
         <VStack
             align="start"
             justify="start"
+            direction='column'
             gap={50}
             className={s.container}
         >
@@ -37,6 +38,33 @@ export default function Introduce(props : IntroduceProps) {
                     <img src={club.logo} alt={club.name} width={24} height={24} />
                     <span className={s.clubName}>{club.name}</span>
                 </>
+            </HStack>
+            <VStack
+                gap={18}
+                fullWidth
+                align="start"
+                justify="start"
+            >
+                <img src={imageSrc} alt={title} height={350} className={s.clubImage} />
+                <VStack
+                    gap={18}
+                    fullWidth
+                    align="start"
+                    justify="start"
+                    className={s.clubIntroSection}
+                >
+                    <p className={s.clubTitle}>{title}</p>
+                    <div className={s.divider}/>
+                    <p className={s.clubDescription}>{description}</p>
+                </VStack>
+            </VStack>
+            <HStack
+                gap={20}
+                fullWidth
+                align="center"
+                justify="end"
+            >
+                <p>추가예정~</p>
             </HStack>
         </VStack>
     );
