@@ -32,7 +32,7 @@ export default function Hero() {
 				</h2>
 			</VStack>
 			<HStack gap={18}>
-				<Link href={'as'} className={s.submit}>
+				<Link href={'https://lu.ma/92qeg481'} className={s.submit} target='_blank'>
 					<FilePen size={22} />
 					<span>SSF 지원하기</span>
 				</Link>

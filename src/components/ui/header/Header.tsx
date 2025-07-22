@@ -3,6 +3,7 @@ import s from './style.module.scss';
 import { Flex } from '@/components/ui';
 import HeaderNav from './nav';
 import { paperlogy } from '@/utils/font';
+import Link from 'next/link';
 
 export default function Header() {
 	return (
@@ -15,9 +16,9 @@ export default function Header() {
 					alt="SSF25 하얀색 로고"
 				/>
 				<button className={s.submitButton}>
-					<a href="a" style={paperlogy.style}>
+					<Link href="https://lu.ma/92qeg481" style={paperlogy.style} target='_blank'>
 						지원하기
-					</a>
+					</Link>
 				</button>
 			</header>
 		</Flex>
