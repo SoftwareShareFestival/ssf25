@@ -1,0 +1,33 @@
+.container {
+    min-width: 1164px;
+}
+
+.title {
+    font-size: 38px;
+    font-weight: 600;
+    color: $color-primary;
+}
+
+.description {
+    font-size: 22px;
+    font-weight: 600;
+    color: $color-primary;
+}
+
+.img{
+    height: 300px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+}
+
+.grid {
+    max-width: 1164px;
+    overflow-x: scroll;
+}
+
+.showAllButton {
+    background: none;
+    border: none;
+    outline: none;
+    gap: 22px;
+}

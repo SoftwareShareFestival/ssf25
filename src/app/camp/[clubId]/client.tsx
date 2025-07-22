@@ -4,8 +4,9 @@ import { VStack } from '@/components/ui';
 import s from './style.module.scss';
 import Introduce from '@/components/camp/introduce';
 import Club from '@/components/camp/club';
+import OtherClub from '@/components/camp/otherClub';
 
-export default function CampClient({ clubInfo }: { clubInfo: any }) {
+export default function CampClient({ clubInfo, allClubList }: { clubInfo: any, allClubList: any }) {
     if (!clubInfo) {
         return (
             <VStack 
@@ -19,7 +20,7 @@ export default function CampClient({ clubInfo }: { clubInfo: any }) {
             </VStack>
         );
     }
-    
+
     return (
         <VStack 
             className={s.container} 
@@ -42,6 +43,9 @@ export default function CampClient({ clubInfo }: { clubInfo: any }) {
                 tags={clubInfo.club.tags}
                 color={clubInfo.club.color}
                 link={clubInfo.club.link}
+            />
+            <OtherClub
+                clubList={allClubList.filter((club: any) => club.club.name !== clubInfo.club.name)}
             />
         </VStack>
     );
