@@ -1,6 +1,7 @@
 import { HStack, VStack } from "@/components/ui";
 import { ArrowLeft } from "lucide-react";
 import s from "./style.module.scss";
+import Link from "../link";
 
 interface IntroduceProps {
     title : string;
@@ -64,7 +65,18 @@ export default function Introduce(props : IntroduceProps) {
                 align="center"
                 justify="end"
             >
-                <p>추가예정~</p>
+                <Link
+                    state="share"
+                    link={link.share}
+                />
+                <Link
+                    state="reels"
+                    link={link.reels}
+                />
+                <Link
+                    state="cardnews"
+                    link={link.cardnews}
+                />
             </HStack>
         </VStack>
     );

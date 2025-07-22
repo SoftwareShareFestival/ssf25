@@ -1,0 +1,23 @@
+.primaryContainer {
+    padding: 20px 45px;    
+    background-color: $color-primary;
+    border-radius: 999px;
+}
+
+.secondaryContainer {
+    padding: 20px 45px;    
+    background-color: #FFD3C5;
+    border-radius: 999px;
+}
+
+.primaryText {
+    color: #FFF0E4;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.secondaryText {
+    color: #FE5521;
+    font-size: 20px;
+    font-weight: 700;
+}

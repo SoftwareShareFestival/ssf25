@@ -26,7 +26,6 @@ export default function CampClient({ clubInfo }: { clubInfo: any }) {
             justify="start" 
             direction='column' 
             gap={120}
-            fullWidth
         >
             <Introduce
                 title={clubInfo.title}
