@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import s from './style.module.scss';
 import { Header, VStack } from '@/components/ui';
+import { Space } from 'lucide-react';
 
 export const metadata: Metadata = {
 	title: '2025 소프트웨어나눔축제',
@@ -15,6 +16,7 @@ export default function CampLayout({
 	return (
         <VStack className={s.container} align='start' justify='start'>
             <Header/>
+            <Space height={64}/>
             {children}
         </VStack>
     )
