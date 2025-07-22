@@ -35,7 +35,7 @@ export default function Schedule() {
 					<span>
 						합격자 발표
 						<br />
-						09.00
+						09.09
 					</span>
 				</div>
 				<div className={s.line} />
