@@ -2,6 +2,9 @@
     width: min(100%, $max-width);
     padding: 0 30px;
     margin: 0 auto;
+
+    display: flex;
+    gap: 52px;
 }
 
 .title {
@@ -10,6 +13,7 @@
     font-weight: 600;
     color: $color-primary;
     margin: 0;
+    word-break: keep-all;
 }
 
 .description {
@@ -19,4 +23,25 @@
     color: $color-primary;
     line-height: 180%;
     margin: 0;
+    word-break: keep-all;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+
+        img {
+            width: 100%;
+            
+            max-width: 400px;
+        }
+    }
+
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 18px;
+    }
 }

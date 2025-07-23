@@ -4,6 +4,7 @@ import { HStack } from '../hstack';
 import { VStack } from '../vstack';
 import { Camp as CampType } from '@/data/camp-list';
 import Link from 'next/link';
+import cn from 'classnames'
 
 export default function Camp({ club, thumbnail, name }: CampType) {
 	return (
@@ -16,14 +17,20 @@ export default function Camp({ club, thumbnail, name }: CampType) {
 					alt={`${name}`}
 					className={s.image}
 				/>
-				<VStack gap={10}>
-					<HStack gap={6}>
-						<Image src={club.imageSrc} width={19} height={19} alt={club.name} />
+				<HStack gap={6}>
+					<Image src={club.imageSrc} width={19} height={19} alt={club.name} />
+					<HStack gap={4} className={s.clubNameContainer}>
 						<span style={{ color: club.color }} className={s.clubName}>
-							{club.name} · {club.description}
+							{club.name}
+						</span>
+						<span style={{ color: club.color }} className={cn(s.dot, s.clubName)}>
+							·
+						</span>
+						<span style={{ color: club.color }} className={cn(s.clubIntroduce, s.clubName)}>
+							{club.description}
 						</span>
 					</HStack>
-				</VStack>
+				</HStack>
 			</VStack>
 		</Link>
 	);

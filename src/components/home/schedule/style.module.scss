@@ -54,3 +54,14 @@
 
     background-color: $color-primary;
 }
+
+@media screen and (max-width: 768px) {
+    .visualize {
+        flex-direction: column !important;
+    }
+
+    .line {
+        width: 6px;
+        height: 50px;
+    }
+}

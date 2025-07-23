@@ -2,6 +2,8 @@
     width: min(100%, 1050px);
 
     margin: 0 auto;
+
+    padding: 0 30px;
 }
 
 .title {
@@ -9,7 +11,37 @@
 }
 
 .description {
-    font-size: 18px;
+    font-size: 20px;
+
+    line-height: 28px;
 
     color: #666666;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+
+        div {
+            align-items: center;
+        }
+
+        gap: 22px;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    }
+
+    .title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 18px;
+        text-align: center;
+    }
 }

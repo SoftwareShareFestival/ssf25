@@ -23,6 +23,7 @@ export default function Hero() {
 					width={405}
 					height={145}
 					alt="선린인터넷고등학교 하얀색 로고"
+					className={s.logo}
 				/>
 				<h1 className={s.title}>
 					2025 Software Share Festival
@@ -31,7 +32,7 @@ export default function Hero() {
 					소프트웨어 도약의 시작 SSF25에 오신것을 환영합니다
 				</h2>
 			</VStack>
-			<HStack gap={18}>
+			<HStack gap={18} className={s.linkContainer}>
 				<Link href={'https://lu.ma/92qeg481'} className={s.submit} target='_blank'>
 					<FilePen size={22} />
 					<span>SSF 지원하기</span>

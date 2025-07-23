@@ -71,3 +71,42 @@
         color: white;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .logo {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .linkContainer {
+        width: 100% !important;
+
+        flex-direction: column !important;
+
+        padding: 0 20px;
+
+        a {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-block: 28px;
+
+            span {
+                font-size: 24px;
+            }
+        }
+    }
+}

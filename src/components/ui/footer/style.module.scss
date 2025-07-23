@@ -1,5 +1,7 @@
 .footer {
     width: 100%;
+
+    padding: 0 30px;
 }
 
 .container {
@@ -16,4 +18,11 @@
 
 .sectionName {
     color: #9A9A9A;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column !important;
+    }
 }

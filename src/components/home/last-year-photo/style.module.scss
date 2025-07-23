@@ -66,3 +66,27 @@
 .rightArrow {
     margin-left: -30px;
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 25px;
+    }
+
+    .title {
+        font-size: 28px;
+
+        word-break: keep-all;
+        text-align: center;
+    }
+
+    .description {
+        word-break: keep-all;
+        text-align: center;
+
+        line-height: 36px;
+    }
+
+    .rightArrow {
+        display: none;
+    }
+}

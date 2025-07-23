@@ -9,7 +9,7 @@ interface Props {
 
 export default function Title({ title, description, align }: Props) {
 	return (
-		<VStack gap={16} align={align}>
+		<VStack gap={16} align={align} className={s.container}>
 			<span className={s.title}>{title}</span>
 			<span className={s.description}>{description}</span>
 		</VStack>
