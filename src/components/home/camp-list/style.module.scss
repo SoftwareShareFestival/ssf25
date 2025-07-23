@@ -31,9 +31,17 @@
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .filterButton {
+        padding: 12px 20px;
+    }
+}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 630px) {
     .list {
-        justify-content: center !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+        padding: 0 30px;
+        overflow-x: scroll;
     }
 }
