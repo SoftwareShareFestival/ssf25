@@ -67,9 +67,9 @@ export default function OtherClub({ clubList }: OtherClubProps) {
                         </span>
                         <ArrowRight 
                             size={24} 
-                        color="#FE5521"
-                        className={`${s.arrow} ${showAll ? s.rotated : ''}`}
-                    />
+                            color="#FE5521"
+                            className={`${s.arrow} ${showAll ? s.rotated : ''}`}
+                        />
                     </HStack>
                 </button>
             </HStack>
