@@ -30,7 +30,7 @@ export default function Schedule() {
 						09.07
 					</span>
 				</div>
-				<div className={s.line} />
+				<div className={cn(s.line, s.centerLine)} />
 				<div className={cn(s.circle, s.circleFill)}>
 					<span>
 						참가자 발표
