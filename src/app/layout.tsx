@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import localFont from 'next/font/local';
+import { Analytics } from "@vercel/analytics/next"
 
 import '@/styles/global.scss';
 import { paperlogy } from '@/utils/font';
@@ -20,6 +20,7 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${paperlogy.className}`}>{children}</body>
+			<Analytics />
 		</html>
 	);
 }

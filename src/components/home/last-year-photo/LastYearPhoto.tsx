@@ -18,7 +18,7 @@ export default function LastYearPhoto() {
 				{LastYearPhotoList.map((image, index) => {
 					if (index === 0) {
 						return (
-							<VStack>
+							<VStack key={index}>
 								<HStack gap={4} className={cn(s.arrow, s.leftArrow)}>
 									<Image
 										src={'/arrow.png'}
