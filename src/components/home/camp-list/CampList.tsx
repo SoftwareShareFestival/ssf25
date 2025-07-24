@@ -56,7 +56,7 @@ export default function CampList() {
 				))}
 			</HStack>
 
-			<HStack wrap="wrap" justify="between" className={s.list}>
+			<HStack wrap="wrap" className={s.list}>
 				{filteredCamps.map((camp, index) => (
 					<Camp key={index} {...camp} />
 				))}
