@@ -86,3 +86,26 @@
         }
     }
 }
+
+@media screen and (max-width: 500px) {
+    .visualize {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        grid-gap: 30px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .circle {
+        width: 130px;
+        height: 130px;
+
+        span {
+            font-size: 18px;
+            line-height: 26px;
+        }
+    }
+}

@@ -39,7 +39,7 @@ export default function Footer() {
 							/>
 						</HStack>
 					</VStack>
-					<HStack gap={32}>
+					<HStack gap={32} className={s.info}>
 						<VStack gap={8}>
 							<span className={s.sectionName}>총괄</span>
 							<span>이동건</span>
