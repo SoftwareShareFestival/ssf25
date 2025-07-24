@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { Camp, HStack, Title, VStack } from '@/components/ui';
 import s from './style.module.scss';
-import { SSFCampList } from '@/data/camp-list';
+import { campData } from '@/data/camp-data';
 import cn from 'classnames';
 import { paperlogy } from '@/utils/font';
 
@@ -23,9 +23,16 @@ const filterButtons: FilterButton[] = [
 export default function CampList() {
 	const [activeFilter, setActiveFilter] = useState<FilterType>('all');
 
-	const filteredCamps = SSFCampList.filter((camp) => {
+	const filteredCamps = campData.filter((camp) => {
 		if (activeFilter === 'all') return true;
-		return camp.department === activeFilter;
+		const department =
+			camp.club.name === 'Layer7' ||
+			camp.club.name === 'IRIS' ||
+			camp.club.name === 'TeamLog' ||
+			camp.club.name === 'Unifox'
+				? 'security'
+				: 'software';
+		return department === activeFilter;
 	});
 
 	return (
