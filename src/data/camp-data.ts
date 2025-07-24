@@ -79,7 +79,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#FF6D03",
+            color: "#EA3E45",
             name: "TeamLog",
             slug: "teamlog",
             tags: ["웹개발", "JavaScript", "감옥탈출"],
