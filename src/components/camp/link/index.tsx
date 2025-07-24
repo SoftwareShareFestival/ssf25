@@ -17,23 +17,22 @@ export default function Link(props: LinkProps) {
         }
 
         if (state === 'share') {
-            if (link) {
-                if (navigator.share) {
-                    navigator.share({
-                        title: '2025 소프트웨어 나눔축제',
-                        text: '선린인터넷고등학교 소프트웨어 나눔 축제 SSF는 2018년부터 이어져온 대표 행사로, 선배들이 소프트웨어 경험을 미래 세대와 나누고, 직접 만들고 체험할 수 있는 기회를 제공하는 축제입니다.',
-                        url: link,
-                    }).catch(() => {
+            const shareUrl = window.location.href;
+            if (navigator.share) {
+                navigator.share({
+                    title: '2025 소프트웨어 나눔축제',
+                    text: '선린인터넷고등학교 소프트웨어 나눔 축제 SSF는 2018년부터 이어져온 대표 행사로, 선배들이 소프트웨어 경험을 미래 세대와 나누고, 직접 만들고 체험할 수 있는 기회를 제공하는 축제입니다.',
+                    url: shareUrl,
+                }).catch(() => {
+                });
+            } else {
+                navigator.clipboard.writeText(shareUrl)
+                    .then(() => {
+                        alert('해당 캠프 링크가 복사되었습니다.');
+                    })
+                    .catch(() => {
+                        alert('복사에 실패했습니다. 다시 시도해 주세요.');
                     });
-                } else {
-                    navigator.clipboard.writeText(link)
-                        .then(() => {
-                            alert('해당 캠프 링크가 복사되었습니다.');
-                        })
-                        .catch(() => {
-                            alert('복사에 실패했습니다. 다시 시도해 주세요.');
-                        });
-                }
             }
             return;
         }
