@@ -26,7 +26,13 @@ export default function OtherClub({ clubList }: OtherClubProps) {
 						href={`/camp/${encodeURIComponent(club.club.name)}`}
 						className={s.clubLink}
 					>
-						<img src={club.imageSrc} alt={club.club.name} className={s.img} />
+						<div
+							className={s.img}
+							style={{
+								backgroundImage: `url(${club.imageSrc})`,
+							}}
+							title={club.club.name}
+						/>
 					</a>
 				))}
 			</div>

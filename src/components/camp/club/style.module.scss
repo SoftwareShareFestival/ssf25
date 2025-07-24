@@ -1,9 +1,10 @@
 .container {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     max-width: 1164px;
-    min-height: auto;
-    flex-direction: column;
     gap: 30px;
+    align-items: flex-start;
     
     @media (max-width: 530px) {
         gap: 20px;
@@ -18,7 +19,6 @@
     @media (min-width: 1024px) {
         flex-direction: row;
         gap: 65px;
-        height: 400px;
         align-items: flex-start;
         text-align: left;
     }
@@ -30,10 +30,10 @@
     height: auto;
     aspect-ratio: 1;
     object-fit: cover;
+    flex-shrink: 0;
     
     @media (max-width: 530px) {
         max-width: 200px;
-        margin: 0 auto;
     }
     
     @media (min-width: 768px) {
@@ -44,15 +44,14 @@
         width: 325px;
         height: 325px;
         max-width: 325px;
-        margin: 0;
     }
 }
 
 .clubContentWrapper {
-    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 100%;
     
     @media (max-width: 530px) {
         align-items: center;
@@ -127,8 +126,10 @@
 }
 
 .tagContainer {
+    display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    align-items: center;
     
     @media (max-width: 530px) {
         gap: 8px;
@@ -146,10 +147,17 @@
 }
 
 .linkContainer {
+    display: flex;
+    gap: 22px;
+    align-items: center;
     width: 100%;
     
     @media (max-width: 530px) {
-        display: flex;
         justify-content: center;
+        gap: 16px;
+    }
+    
+    @media (min-width: 1024px) {
+        justify-content: flex-end;
     }
 }

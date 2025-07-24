@@ -42,12 +42,7 @@
 .clubLink {
     display: block;
     width: 100%;
-    max-width: 280px;
     transition: transform 0.2s ease;
-    
-    @media (max-width: 530px) {
-        max-width: 100%;
-    }
     
     &:hover {
         transform: translateY(-2px);
@@ -56,32 +51,33 @@
 
 .img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 3/4; /* 포스터 형식 비율 */
+    height: 0;
+    padding-bottom: 133.33%; /* 3:4 비율 (4/3 * 100) */
+    position: relative;
     border: 1px solid #d9d9d9;
     border-radius: 12px;
-    object-fit: cover;
-    object-position: center top; /* 이미지 상단부터 보이도록 */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
     
     @media (max-width: 530px) {
-        aspect-ratio: 3/4;
+        padding-bottom: 133.33%;
         border-radius: 8px;
-        min-height: 200px;
     }
     
     @media (min-width: 768px) {
-        aspect-ratio: 3/4;
+        padding-bottom: 133.33%;
     }
     
     @media (min-width: 1024px) {
-        aspect-ratio: 3/4;
+        padding-bottom: 133.33%;
     }
 }
 
 .grid {
     width: 100%;
     max-width: 1164px;
-    overflow-x: auto;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 15px;
@@ -97,15 +93,9 @@
     }
     
     @media (min-width: 1024px) {
-        display: flex;
-        flex-wrap: wrap;
-        overflow-x: visible;
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
-        
-        .clubLink {
-            flex: 0 0 calc(25% - 15px);
-            max-width: 280px;
-        }
+        max-width: 1164px;
     }
 }
 
@@ -113,13 +103,12 @@
     background: none;
     border: none;
     outline: none;
-    gap: 22px;
+    cursor: pointer;
     width: 100%;
     padding: 20px 0;
     
     @media (max-width: 530px) {
         padding: 16px 0;
-        gap: 16px;
     }
     
     @media (min-width: 1024px) {
