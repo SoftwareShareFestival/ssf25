@@ -35,16 +35,8 @@
     
     @media (max-width: 530px) {
         border-radius: 8px;
-        max-height: 200px;
     }
-    
-    @media (min-width: 768px) {
-        max-height: 300px;
-    }
-    
-    @media (min-width: 1024px) {
-        max-height: 350px;
-    }
+
 }
 
 .clubIntroSection {
@@ -137,18 +129,25 @@
 .linkButtons {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     width: 100%;
     align-items: center;
+    justify-content: center;
     
     @media (max-width: 530px) {
-        gap: 8px;
+        gap: 12px;
     }
     
     @media (min-width: 768px) {
         flex-direction: row;
         gap: 20px;
-        justify-content: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    @media (min-width: 1024px) {
+        gap: 24px;
+        flex-wrap: nowrap;
     }
 }
 

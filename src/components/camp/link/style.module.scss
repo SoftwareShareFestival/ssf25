@@ -1,7 +1,10 @@
-.primaryContainer {
+// 공통 버튼 스타일
+.buttonBase {
     padding: 16px 32px;    
-    background-color: $color-primary;
     border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
     
     @media (max-width: 530px) {
         padding: 12px 20px;
@@ -16,56 +19,35 @@
     }
 }
 
+.primaryContainer {
+    @extend .buttonBase;
+    background-color: $color-primary;
+}
+
 .secondaryContainer {
-    padding: 16px 32px;    
-    background-color: #FFD3C5;
-    border-radius: 999px;
-    
-    @media (max-width: 530px) {
-        padding: 12px 20px;
-    }
-    
-    @media (min-width: 768px) {
-        padding: 18px 38px;
-    }
-    
-    @media (min-width: 1024px) {
-        padding: 20px 45px;
-    }
+    @extend .buttonBase;
+    background-color: #FFF0E4;
+    border: 2px solid $color-primary;
 }
 
 .primaryText {
     color: #FFF0E4;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    
-    @media (max-width: 530px) {
-        font-size: 14px;
-    }
-    
-    @media (min-width: 768px) {
-        font-size: 18px;
-    }
-    
-    @media (min-width: 1024px) {
-        font-size: 20px;
-    }
+    transition: color 0.3s ease;
 }
 
 .secondaryText {
     color: #FE5521;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
-    
-    @media (max-width: 530px) {
-        font-size: 14px;
-    }
-    
-    @media (min-width: 768px) {
-        font-size: 18px;
-    }
-    
-    @media (min-width: 1024px) {
-        font-size: 20px;
-    }
+    transition: color 0.3s ease;
+}
+
+.primaryIcon {
+    transition: color 0.3s ease;
+}
+
+.secondaryIcon {
+    transition: color 0.3s ease;
 }
