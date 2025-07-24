@@ -47,7 +47,7 @@ export default function Schedule() {
 					</span>
 				</div>
 			</HStack>
-			<Link
+			{/* <Link
 				href="https://calendar.google.com/calendar/u/0?cid=Njc3ODU2NTY2OWIxMDdiN2E4Mjg4ZTUzZTRiMDNlYzU4NDAyMjc3NTMzN2M4MzVhZDA1Nzk5NzQwYzFiNzdkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
 				target="_blank"
 			>
@@ -57,7 +57,7 @@ export default function Schedule() {
 					height={30}
 					alt="눌러서 구글 캘린더에 일정 등록하기"
 				/>
-			</Link>
+			</Link> */}
 		</section>
 	);
 }
