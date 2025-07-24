@@ -125,8 +125,8 @@ export default function LastYearPhoto() {
 							<Image
 								src={selectedImage}
 								alt="확대된 작년 SSF24 이미지"
-								width={0}
-								height={0}
+								width={imgSize.width || 300}
+								height={imgSize.height || 170}
 								style={isMobile ? {
 									width: '90vw',
 									height: '26vh',
