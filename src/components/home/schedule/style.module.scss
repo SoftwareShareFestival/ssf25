@@ -64,48 +64,51 @@
     background-color: $color-primary;
 }
 
+// 768px 미만: 중간 크기
 @media screen and (max-width: 768px) {
-    .circle {
+    .visualize .circle {
         width: 125px;
         height: 125px;
 
-        span {
+        & > span {
             font-size: 18px;
         }
     }
 }
 
-@media screen and (max-width: 570px) {
-    .circle {
+// 570px 미만: 작은 크기 (500px 초과)
+@media screen and (max-width: 570px) and (min-width: 501px) {
+    .visualize .circle {
         width: 100px;
         height: 100px;
 
-        span {
+        & > span {
             font-size: 16px;
             line-height: 22px;
         }
     }
 }
 
+// 500px 이하: 그리드 레이아웃으로 변경
 @media screen and (max-width: 500px) {
-    .visualize {
-        display: grid;
+    .container .visualize {
+        display: grid !important;
         grid-template-columns: 1fr 1fr;
         place-items: center;
         grid-gap: 30px;
     }
 
-    .line {
-        display: none;
+    .visualize .line {
+        display: none !important;
     }
 
-    .circle {
-        width: 130px;
-        height: 130px;
+    .visualize .circle {
+        width: 130px !important;
+        height: 130px !important;
 
-        span {
-            font-size: 18px;
-            line-height: 26px;
+        & > span {
+            font-size: 18px !important;
+            line-height: 26px !important;
         }
     }
 }
