@@ -15,7 +15,7 @@ export interface Camp {
 export const SSFCampList: Camp[] = [
 	{
 		thumbnail: '/camp/layer7.png',
-		name: 'Chrome 해킹해서 친구 검색기록 홈쳐보기',
+		name: 'Chrome 해킹해서 친구 검색기록 훔쳐보기',
 		club: { imageSrc: '/club/layer7.png', color: '#000000', name: 'Layer7', description: '해킹 동아리' },
 		department: 'security'
 	},

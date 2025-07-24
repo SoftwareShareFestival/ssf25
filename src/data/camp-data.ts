@@ -24,7 +24,7 @@ export interface CampInfo {
 
 export const campData: CampInfo[] = [
     {
-        title: "Chrome 해킹해서 친구 검색기록 홈쳐보기",
+        title: "Chrome 해킹해서 친구 검색기록 훔쳐보기",
         description: "브라우저를 직접 해킹하고, 해커의 입장에서 사용자의 정보가 어떻게 탈취되는지 체험해보세요. 공격자의 시선을 통해 보안을 이해하고, 실생활에서 나를 지킬 수 있는 방법까지 함께 배워봅니다.",
         imageSrc: "/camp/layer7.png",
         link: {
