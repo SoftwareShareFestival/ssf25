@@ -71,7 +71,7 @@ export default function Introduce(props: IntroduceProps) {
 				</VStack>
 			</VStack>
 			<div className={s.linkButtons}>
-				<Link state="share" link={link.share} />
+				<Link state="share" link={link.share} title={title} description={description} />
 				<Link state="reels" link={link.reels} />
 				<Link state="cardnews" link={link.cardnews} />
 			</div>

@@ -5,10 +5,12 @@ import { ArrowUpLeft, Share, Share2 } from 'lucide-react';
 interface LinkProps {
 	state: 'share' | 'reels' | 'cardnews';
 	link: string;
+	title?: string;
+	description?: string;
 }
 
 export default function Link(props: LinkProps) {
-	const { state, link } = props;
+	const { state, link, title, description } = props;
 
 	const handleClick = () => {
         if (state === 'reels' || state === 'cardnews') {
@@ -18,10 +20,13 @@ export default function Link(props: LinkProps) {
 
         if (state === 'share') {
             const shareUrl = window.location.href;
+            const shareText = title && description
+                ? `[${title}]\n${description}`
+                : '선린인터넷고등학교 소프트웨어 나눔 축제 SSF는 2018년부터 이어져온 대표 행사로, 선배들이 소프트웨어 경험을 미래 세대와 나누고, 직접 만들고 체험할 수 있는 기회를 제공하는 축제입니다.';
             if (navigator.share) {
                 navigator.share({
-                    title: '2025 소프트웨어 나눔축제',
-                    text: '선린인터넷고등학교 소프트웨어 나눔 축제 SSF는 2018년부터 이어져온 대표 행사로, 선배들이 소프트웨어 경험을 미래 세대와 나누고, 직접 만들고 체험할 수 있는 기회를 제공하는 축제입니다.',
+                    title: title || '2025 소프트웨어 나눔축제',
+                    text: shareText,
                     url: shareUrl,
                 }).catch(() => {
                 });
