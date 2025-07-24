@@ -1,28 +1,112 @@
 .container {
-    min-width: 1164px;
+    width: 100%;
+    max-width: 1164px;
 }
 
 .title {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 600;
     color: $color-primary;
+    
+    @media (max-width: 530px) {
+        font-size: 24px;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 38px;
+    }
 }
 
 .description {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 600;
     color: $color-primary;
+    
+    @media (max-width: 530px) {
+        font-size: 14px;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 22px;
+    }
 }
 
-.img{
-    height: 300px;
+.clubLink {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    transition: transform 0.2s ease;
+    
+    @media (max-width: 530px) {
+        max-width: 100%;
+    }
+    
+    &:hover {
+        transform: translateY(-2px);
+    }
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4; /* 포스터 형식 비율 */
     border: 1px solid #d9d9d9;
     border-radius: 12px;
+    object-fit: cover;
+    object-position: center top; /* 이미지 상단부터 보이도록 */
+    
+    @media (max-width: 530px) {
+        aspect-ratio: 3/4;
+        border-radius: 8px;
+        min-height: 200px;
+    }
+    
+    @media (min-width: 768px) {
+        aspect-ratio: 3/4;
+    }
+    
+    @media (min-width: 1024px) {
+        aspect-ratio: 3/4;
+    }
 }
 
 .grid {
+    width: 100%;
     max-width: 1164px;
-    overflow-x: scroll;
+    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    
+    @media (max-width: 530px) {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
+    }
+    
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    @media (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: visible;
+        gap: 20px;
+        
+        .clubLink {
+            flex: 0 0 calc(25% - 15px);
+            max-width: 280px;
+        }
+    }
 }
 
 .showAllButton {
@@ -30,4 +114,15 @@
     border: none;
     outline: none;
     gap: 22px;
+    width: 100%;
+    padding: 20px 0;
+    
+    @media (max-width: 530px) {
+        padding: 16px 0;
+        gap: 16px;
+    }
+    
+    @media (min-width: 1024px) {
+        width: auto;
+    }
 }

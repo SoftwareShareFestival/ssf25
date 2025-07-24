@@ -5,4 +5,29 @@
     align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: var(--mobile-gap, 60px);
+    
+    @media (max-width: 530px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+        gap: var(--mobile-gap, 60px);
+    }
+    
+    @media (min-width: 768px) {
+        padding-left: 40px;
+        padding-right: 40px;
+        gap: var(--tablet-gap, 90px);
+    }
+    
+    @media (min-width: 1024px) {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        gap: var(--desktop-gap, 120px);
+    }
 }

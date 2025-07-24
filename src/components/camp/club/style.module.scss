@@ -1,26 +1,155 @@
 .container {
-    min-width: 1164px;
-    height: 400px;
+    width: 100%;
+    max-width: 1164px;
+    min-height: auto;
+    flex-direction: column;
+    gap: 30px;
+    
+    @media (max-width: 530px) {
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+        gap: 40px;
+    }
+    
+    @media (min-width: 1024px) {
+        flex-direction: row;
+        gap: 65px;
+        height: 400px;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+.clubLogo {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    
+    @media (max-width: 530px) {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    
+    @media (min-width: 768px) {
+        max-width: 280px;
+    }
+    
+    @media (min-width: 1024px) {
+        width: 325px;
+        height: 325px;
+        max-width: 325px;
+        margin: 0;
+    }
+}
+
+.clubContentWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    @media (max-width: 530px) {
+        align-items: center;
+        text-align: center;
+    }
+    
+    @media (min-width: 1024px) {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 .clubName {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 700;
     color: #000;
     margin: 0;
+    
+    @media (max-width: 530px) {
+        font-size: 22px;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 38px;
+    }
 }
 
 .clubWhat {
-    font-size: 38px;
+    font-size: 28px;
     font-weight: 700;
     color: #847E7E;
     margin: 0;
+    
+    @media (max-width: 530px) {
+        font-size: 22px;
+        display: block;
+        margin-top: 4px;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 32px;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 38px;
+    }
 }
 
 .clubDescription {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 180%;
     color: #666666;
     margin: 0;
+    
+    @media (max-width: 530px) {
+        font-size: 14px;
+        line-height: 160%;
+    }
+    
+    @media (min-width: 768px) {
+        font-size: 18px;
+    }
+    
+    @media (min-width: 1024px) {
+        font-size: 22px;
+    }
+}
+
+.tagContainer {
+    flex-wrap: wrap;
+    gap: 12px;
+    
+    @media (max-width: 530px) {
+        gap: 8px;
+        justify-content: center;
+    }
+    
+    @media (min-width: 768px) {
+        gap: 18px;
+    }
+    
+    @media (min-width: 1024px) {
+        gap: 22px;
+        justify-content: flex-start;
+    }
+}
+
+.linkContainer {
+    width: 100%;
+    
+    @media (max-width: 530px) {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -56,7 +56,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#5B80D7",
             name: "IRIS",
             slug: "iris",
             tags: ["Rc카", "사물인터넷", "리눅스", "라즈베리파이"],
@@ -79,7 +79,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#FF6D03",
             name: "TeamLog",
             slug: "teamlog",
             tags: ["게임개발", "JavaScript", "HTML5"],
@@ -102,7 +102,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#FF6D03",
             name: "Unifox",
             slug: "unifox",
             tags: ["유니티", "게임개발", "C#"],
@@ -125,7 +125,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#334882",
             name: "AnA",
             slug: "ana",
             tags: ["웹개발", "React", "프론트엔드"],
@@ -148,7 +148,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#1DD8D6",
             name: "C,real",
             slug: "creal", // 쉼표 제거된 slug
             tags: ["유니티", "게임개발", "C#"],
@@ -194,7 +194,7 @@ export const campData: CampInfo[] = [
             cardnews: "https://www.youtube.com/"
         },
         club: {
-            color: "#000",
+            color: "#9966FF",
             name: "PARA",
             slug: "para",
             tags: ["AI", "머신러닝", "음악추천"],
