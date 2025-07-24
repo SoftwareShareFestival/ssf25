@@ -59,7 +59,7 @@ export const campData: CampInfo[] = [
             color: "#5B80D7",
             name: "IRIS",
             slug: "iris",
-            tags: ["Rc카", "사물인터넷", "리눅스", "라즈베리파이"],
+            tags: ["RC카", "사물인터넷", "리눅스", "라즈베리파이"],
             description: "IRIS는 선린인터넷고등학교 정보보호과의 전공 동아리로, IoT와 인공지능에 관심 있는 학생들이 모여 활동하고 있습니다. 저희는 C언어와 파이썬을 기반으로 프로그래밍을 배우며, 라즈베리파이와 아두이노를 활용해 IoT의 기본 원리와 인공지능의 핵심 개념을 익히고 있습니다",
             logo: "/club/iris.png",
             link: {
@@ -174,7 +174,7 @@ export const campData: CampInfo[] = [
             color: "#000",
             name: "TAPIE",
             slug: "tapie",
-            tags: ["웹_게임 #JS_프로그래밍", "HTML5", "CSS"],
+            tags: ["웹_게임", "JS_프로그래밍", "HTML5", "CSS"],
             description: "TAPIE는 App\:ple Pi, EDCAN, IWOP가 합쳐져 새롭게 만들어진 선린인터넷고 소프트웨어과 전공 동아리로, 세상에 존재하는 다양한 간극을 소프트웨어로 이어붙이자는 신념 아래 전공 역량을 바탕으로 끊임없이 노력하고 있으며, 이번 테이피 소프트웨어 나눔 축제에 신청해주셔서 진심으로 감사드리며 좋은 추억과 경험이 될 수 있도록 최선을 다하겠습니다.",
             logo: "/club/tapie.png",
             link: {
