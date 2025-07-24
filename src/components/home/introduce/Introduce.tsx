@@ -15,6 +15,11 @@ export default function Introduce() {
 먼저 소프트웨어를 경험한 사람들이 미래 세대에게 <br></br>
 소프트웨어에 대한 경험을 나누고, 다양한 소프트웨어를 직접 만들고 <br></br>
 체험해볼 수 있는 행사입니다.</p>
+                <p className={s.description + ' ' + s.mobileOnly}>
+선린인터넷고등학교 소프트웨어 나눔 축제,
+SSF는 2018년부터 개최된 선린인터넷고등학교의 최대 축제 중 하나입니다.<br></br>
+먼저 소프트웨어를 경험한 사람들이 미래 세대에게 소프트웨어에 대한 경험을 나누고, 
+다양한 소프트웨어를 직접 만들고 체험해볼 수 있는 행사입니다.</p>
             </VStack>
             <img src={'/introduce_tree.svg'}/>
         </HStack>

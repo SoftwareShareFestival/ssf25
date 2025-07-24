@@ -26,6 +26,19 @@
     word-break: keep-all;
 }
 
+.mobileOnly {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .description {
+    display: none;
+  }
+  .mobileOnly {
+    display: block;
+  }
+}
+
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column !important;

@@ -12,7 +12,7 @@ export default function Schedule() {
 		<section className={s.container}>
 			<Title
 				title="캠프 일정"
-				description="지원을 통해 지원자를 선발 후 캠프를 진행합니다!"
+				description="접수를 통해 참가자를 선발 후 캠프를 진행합니다!"
 			/>
 			<HStack className={s.visualize} align="center">
 				<div className={s.circle}>
