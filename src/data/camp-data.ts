@@ -38,7 +38,7 @@ export const campData: CampInfo[] = [
             slug: "layer7",
             tags: ["해킹", "보안", "윤리"],
             description: "We Hack the Universe, 해킹을 통해 세상의 경계를 넓히는 Layer7입니다. 25년의 역사를 가지고 웹 해킹·리버스 엔지니어링·시스템 해킹 등 폭넓은 보안 분야를 탐구해 왔습니다. 동아리에서 활동하며 역량을 키운 우리는 그 실력을 바탕으로 DEFCON과 CODEGATE CTF 같은 세계적 대회에서 수상했으며, CODEGATE 국제 해킹 컨퍼런스 무대에서 자체 연구 프로젝트를 발표하는 등 우수한 성과를 거두고 있습니다.",
-            logo: "/club/layer7.png",
+            logo: "/club/layer7.svg",
             link: {
                 website: "https://layer7.kr/",
                 instagram: "https://instagram.com/sunrin_layer7"
@@ -61,7 +61,7 @@ export const campData: CampInfo[] = [
             slug: "iris",
             tags: ["프로그래밍", "사물인터넷", "인공지능"],
             description: "IRIS는 선린인터넷고등학교 정보보호과의 전공 동아리로, IoT와 인공지능에 관심 있는 학생들이 모여 활동하고 있습니다. 저희는 C언어와 파이썬을 기반으로 프로그래밍을 배우며, 라즈베리파이와 아두이노를 활용해 IoT의 기본 원리와 인공지능의 핵심 개념을 익히고 있습니다",
-            logo: "/club/iris.png",
+            logo: "/club/iris.svg",
             link: {
                 website: "https://sunrin-iris.kr/",
                 instagram: "https://www.instagram.com/sunrin_iris/"
@@ -84,7 +84,7 @@ export const campData: CampInfo[] = [
             slug: "teamlog",
             tags: ["웹", "서버 프로그래밍", "네트워크"],
             description: "TeamLog는 서버 프로그래밍, 네트워크, 웹 개발에 관심 있는 학생들이 모여 함께 동아리 활동을 하며, 2013년 창설 이후 교내외 다양한 활동과 우수한 수상 실적을 이어오고 있으며, 웹 개발과 서버 구축 수업을 통해 프레임워크 기반 사이트 개발과 서버 운영 역량을 기르고, 웹·네트워크 보안을 융합한 정보보안 프로젝트도 수행하고 있습니다.",
-            logo: "/club/teamlog.png",
+            logo: "/club/teamlog.svg",
             link: {
                 website: "https://teamlog.kr/",
                 instagram: "https://www.instagram.com/sunrin_teamlog"
@@ -107,7 +107,7 @@ export const campData: CampInfo[] = [
             slug: "unifox",
             tags: ["알고리즘", "웹해킹", "시큐어코딩"],
             description: "Unifox는 선린인터넷고등학교 정보보호과 전공동아리로서 설립되어 개발과 보안 프로그래밍 분야에서 활동하고 있습니다. 보안 프로그래밍의 기본이 되는 알고리즘과 웹, 그리고 해킹을 공부하여 보안에 최적화된 개발을 할 수 있도록 돕습니다. 풍부한 경험을 쌓는 다양한 대회와 컨퍼런스 참여, 각자의 분야에서 깊은 탐구, 지식의 깊이를 더해주는 논문 작성 등 우리는 꿈과 미래에 대한 확신으로 가득 찬 친구들이 모여 함께 만들어 갑니다.",
-            logo: "/club/unifox.png",
+            logo: "/club/unifox.svg",
             link: {
                 website: "https://unifox.kr/",
                 instagram: "https://www.instagram.com/sunrin_unifox"
@@ -130,7 +130,7 @@ export const campData: CampInfo[] = [
             slug: "ana",
             tags: ["백엔드", "서버", "네트워크"],
             description: "AnA는 2011년부터 활동한 선린인터넷고등학교 소프트웨어과 서버 개발 동아리입니다. AnA는 눈에 보이지 않는 곳에서 세상을 움직이는 기술을 개발하여, 세상을 연결하고 밝게 만들어 나가고 있습니다. AnA는 서버 구축, 백엔드 개발, 네트워킹, CI/CD 등 주로 서버에 관해 공부하며, 추가로 알고리즘, 자료 구조, 인공지능 등에 대해서도 공부하고 있습니다. 부원의 처음 실력과 관계없이 모든 부원이 최고의 실력을 갖출 수 있도록 기초반과 심화반을 운영하고 있습니다.",
-            logo: "/club/ana.png",
+            logo: "/club/ana.svg",
             link: {
                 website: "#",
                 instagram: "https://www.instagram.com/sunrin_ana"
@@ -153,7 +153,7 @@ export const campData: CampInfo[] = [
             slug: "creal", // 쉼표 제거된 slug
             tags: ["게임", "Unity", "게임 개발"],
             description: "Creating game, Reality of imagination. C,real은 2024년 RG(Repulic of Game)와 Zer0pen이라는 게임 동아리가 합쳐진 선린인터넷고등학교 유일 게임 개발 전공 동아리 입니다. C,real은 게임 개발에서 가장 많이 활용되는 유니티 엔진과 유니티 엔진에서 사용하는 C#언어, 그리고 게임 디자인과 기획까지  배울수 있습니다.",
-            logo: "/club/creal.png",
+            logo: "/club/creal.svg",
             link: {
                 website: "https://sunrint-creal.com",
                 instagram: "https://www.instagram.com/c.real._"
@@ -176,7 +176,7 @@ export const campData: CampInfo[] = [
             slug: "tapie",
             tags: ["웹앱동아리", "React", "Figma"],
             description: "TAPIE는 App\:ple Pi, EDCAN, IWOP가 합쳐져 새롭게 만들어진 선린인터넷고 소프트웨어과 전공 동아리로, 세상에 존재하는 다양한 간극을 소프트웨어로 이어붙이자는 신념 아래 전공 역량을 바탕으로 끊임없이 노력하고 있으며, 이번 테이피 소프트웨어 나눔 축제에 신청해주셔서 진심으로 감사드리며 좋은 추억과 경험이 될 수 있도록 최선을 다하겠습니다.",
-            logo: "/club/tapie.png",
+            logo: "/club/tapie.svg",
             link: {
                 website: "https://tapie.kr/",
                 instagram: "https://www.instagram.com/sunrin_tapie"
@@ -199,7 +199,7 @@ export const campData: CampInfo[] = [
             slug: "para",
             tags: ["AI", "인공지능", "PARA"],
             description: "Para는 Project Achievement Research AI 라는 뜻을 가진 동아리로 인공지능에 대해 연구하고 활용하여 개발하는 인공지능 서비스 개발 전공 동아리입니다.",
-            logo: "/club/para.png",
+            logo: "/club/para.svg",
             link: {
                 website: "https://sunrin-para.dev",
                 instagram: "https://www.instagram.com/sunrin_para"
