@@ -3,7 +3,7 @@
 import { HStack, VStack } from '@/components/ui';
 import s from './style.module.scss';
 import { ArrowRight } from 'lucide-react';
-import { useState, useMemo } from 'react';
+import { useEffect, useState } from 'react';
 
 interface OtherClubProps {
 	clubList: {
@@ -16,15 +16,17 @@ interface OtherClubProps {
 }
 
 export default function OtherClub({ clubList }: OtherClubProps) {
+	const [shuffledClubList, setShuffledClubList] = useState(clubList);
 
-	const shuffledClubList = useMemo(() => {
+	useEffect(() => {
 		const arr = [...clubList];
 		for (let i = arr.length - 1; i > 0; i--) {
 			const j = Math.floor(Math.random() * (i + 1));
 			[arr[i], arr[j]] = [arr[j], arr[i]];
 		}
-		return arr;
+		setShuffledClubList(arr);
 	}, [clubList]);
+
 	return (
 		<VStack align="start" justify="start" gap={24} className={s.container}>
 			<p className={s.title}>다른 캠프도 확인해보세요</p>
