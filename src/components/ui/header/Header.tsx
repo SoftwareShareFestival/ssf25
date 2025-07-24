@@ -17,11 +17,13 @@ export default function Header() {
 						alt="SSF25 하얀색 로고"
 					/>
 				</Link>
-				<button className={s.submitButton}>
-					<Link href="https://lu.ma/92qeg481" style={paperlogy.style} target='_blank'>
-						지원하기
-					</Link>
-				</button>
+				<Link
+					href="https://lu.ma/92qeg481"
+					style={paperlogy.style}
+					target="_blank"
+				>
+					<button className={s.submitButton}>지원하기</button>
+				</Link>
 			</header>
 		</Flex>
 	);

@@ -12,8 +12,6 @@
     background-image: url("/dot_primary.png");
     background-size: 20px;
     
-    min-height: 70vh;
-    
     @media screen and (max-width: 768px) {
         padding: 60px 20px 80px 20px;
         min-height: 60vh;
