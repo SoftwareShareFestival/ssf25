@@ -1,10 +1,26 @@
+'use client';
+
 import { HStack, VStack } from '@/components/ui';
 import s from './style.module.scss';
 import { LastYearPhoto as LastYearPhotoList } from '@/data/last-year-photo';
 import Image from 'next/image';
 import cn from 'classnames';
+import { useEffect, useState } from 'react';
 
 export default function LastYearPhoto() {
+	const [isMobile, setIsMobile] = useState(false);
+
+	useEffect(() => {
+		const checkMobile = () => {
+			setIsMobile(window.innerWidth <= 768);
+		};
+
+		checkMobile();
+		window.addEventListener('resize', checkMobile);
+
+		return () => window.removeEventListener('resize', checkMobile);
+	}, []);
+
 	return (
 		<section className={s.container}>
 			<VStack gap={22} align="center">
@@ -19,15 +35,17 @@ export default function LastYearPhoto() {
 					if (index === 0) {
 						return (
 							<VStack key={index}>
-								<HStack gap={4} className={cn(s.arrow, s.leftArrow)}>
-									<Image
-										src={'/arrow.png'}
-										width={60}
-										height={60}
-										alt="그냥 화살표 ㅋ"
-									/>
-									<span>2024 SSF 사진</span>
-								</HStack>
+								{!isMobile && (
+									<HStack gap={4} className={cn(s.arrow, s.leftArrow)}>
+										<Image
+											src={'/arrow.png'}
+											width={60}
+											height={60}
+											alt="그냥 화살표 ㅋ"
+										/>
+										<span>2024 SSF 사진</span>
+									</HStack>
+								)}
 								<Image
 									key={index}
 									src={image}
@@ -51,15 +69,17 @@ export default function LastYearPhoto() {
 						/>
 					);
 				})}
-				<VStack gap={4} className={cn(s.arrow, s.rightArrow)}>
-					<Image
-						src={'/arrow.png'}
-						width={60}
-						height={60}
-						alt="그냥 화살표 ㅋ"
-					/>
-					<span>2024 SSF 사진</span>
-				</VStack>
+				{!isMobile && (
+					<VStack gap={4} className={cn(s.arrow, s.rightArrow)}>
+						<Image
+							src={'/arrow.png'}
+							width={60}
+							height={60}
+							alt="그냥 화살표 ㅋ"
+						/>
+						<span>2024 SSF 사진</span>
+					</VStack>
+				)}
 			</HStack>
 		</section>
 	);
