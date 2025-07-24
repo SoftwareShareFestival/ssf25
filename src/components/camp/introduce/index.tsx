@@ -1,12 +1,16 @@
+'use client';
+
 import { HStack, VStack } from '@/components/ui';
 import { ArrowLeft } from 'lucide-react';
 import s from './style.module.scss';
+import { useRouter } from 'next/navigation';
 import Link from '../link';
 
 interface IntroduceProps {
 	title: string;
 	description: string;
 	imageSrc: string;
+	color: string;
 	link: {
 		share: string;
 		reels: string;
@@ -20,7 +24,8 @@ interface IntroduceProps {
 }
 
 export default function Introduce(props: IntroduceProps) {
-	const { title, description, imageSrc, link, club } = props;
+	const router = useRouter();
+	const { title, description, imageSrc, color, link, club } = props;
 	return (
 		<VStack
 			align="start"
@@ -35,7 +40,13 @@ export default function Introduce(props: IntroduceProps) {
 				justify="start"
 				className={s.headerSection}
 			>
-				<ArrowLeft size={32} className={s.backIcon} />
+				<button 
+					onClick={() => router.back()} 
+					className={s.backButton}
+					aria-label="뒤로 가기"
+				>
+					<ArrowLeft size={32} className={s.backIcon} />
+				</button>
 				<img
 					src={club.logo}
 					alt={club.name}
@@ -43,7 +54,7 @@ export default function Introduce(props: IntroduceProps) {
 					height={24}
 					className={s.clubLogo}
 				/>
-				<span className={s.clubName}>{club.name}</span>
+				<span className={s.clubName} style={{ color }}>{club.name}</span>
 			</HStack>
 			<VStack gap={18} fullWidth align="start" justify="start">
 				<img src={imageSrc} alt={title} className={s.clubImage} />

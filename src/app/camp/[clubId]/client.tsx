@@ -47,6 +47,7 @@ export default function CampClient({
 				imageSrc={clubInfo.imageSrc}
 				link={clubInfo.link}
 				club={clubInfo.club}
+				color={clubInfo.club.color}
 			/>
 			<Club
 				name={clubInfo.club.name}
@@ -57,9 +58,16 @@ export default function CampClient({
 				link={clubInfo.club.link}
 			/>
 			<OtherClub
-				clubList={allClubList.filter(
-					(club: any) => club.club.name !== clubInfo.club.name
-				)}
+				clubList={allClubList
+					.filter((club: any) => club.club.name !== clubInfo.club.name)
+					.map((club: any) => ({
+						...club,
+						club: {
+							...club.club,
+							slug: club.club.slug || club.club.name.toLowerCase().replace(/\s+/g, '-')
+						}
+					}))
+				}
 			/>
 		</VStack>
 	);

@@ -10,6 +10,7 @@ interface OtherClubProps {
 		imageSrc: string;
 		club: {
 			name: string;
+			slug: string;
 		};
 	}[];
 }
@@ -22,8 +23,8 @@ export default function OtherClub({ clubList }: OtherClubProps) {
 			<div className={s.grid}>
 				{clubList.slice(0, showAll ? clubList.length : 4).map((club) => (
 					<a
-						key={club.club.name}
-						href={`/camp/${encodeURIComponent(club.club.name)}`}
+						key={club.club.slug}
+						href={`/camp/${club.club.slug}`}
 						className={s.clubLink}
 					>
 						<div
