@@ -13,7 +13,7 @@ export default function ShowReel() {
     return (
         <section className={s.container}>
             <div className={s.videoWrapper}>
-                <YouTube videoId="WRIjMFXLfwo" opts={opts} />
+                <YouTube videoId="u1qovPmoABE" opts={opts} />
             </div>
         </section>
     );
