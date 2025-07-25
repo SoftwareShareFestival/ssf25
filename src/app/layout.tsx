@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import '@/styles/global.scss';
 import { paperlogy } from '@/utils/font';
@@ -31,7 +32,8 @@ export default function RootLayout({
 				<meta name="twitter:image" content="/ssf2025.png" />
 			</head>
 			<body className={`${paperlogy.className}`}>{children}</body>
-			<Analytics />
+			<Analytics mode="production" />
+			<SpeedInsights />
 		</html>
 	);
 }
