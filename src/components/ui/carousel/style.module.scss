@@ -1,0 +1,15 @@
+.carouselContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 64px;
+  width: fit-content;
+  transition: transform 0.1s linear;
+}
+
+.carouselItem {
+  flex-shrink: 0;
+}

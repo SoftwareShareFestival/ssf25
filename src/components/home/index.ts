@@ -1,5 +1,5 @@
 export * from './hero'
-export * from './with-club'
+export * from './section/with-club'
 export * from './showreel'
 export * from './schedule'
 export * from './camp-list'
