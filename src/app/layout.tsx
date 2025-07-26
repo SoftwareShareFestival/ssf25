@@ -13,6 +13,7 @@ const website = {
 export const metadata: Metadata = {
 	title: website.title,
 	description: website.description,
+	metadataBase: new URL('https://ssf.sunrin.io'),
 	icons: {
 		icon: '/favicon.ico',
 	},
