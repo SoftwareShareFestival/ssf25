@@ -1,0 +1,54 @@
+export interface FAQItemData {
+  id: number;
+  category: '캠프' | '기타';
+  question: string;
+  answer: string;
+}
+
+export const faqData: FAQItemData[] = [
+  {
+    id: 1,
+    category: '캠프',
+    question: '참가 신청은 어떻게 하나요?',
+    answer:
+      '참가 신청은 9월 1일부터 9월 7일까지 본 홈페이지에서 하실 수 있습니다.',
+  },
+  {
+    id: 2,
+    category: '캠프',
+    question: '중복 지원이 가능한가요?',
+    answer:
+      '1지망부터 3지망까지 중복 신청이 가능합니다. 자세한 선정 기준은 아래 질문을 참고해주세요.',
+  },
+  {
+    id: 3,
+    category: '캠프',
+    question: '선정 기준이 어떻게 되나요?',
+    answer:
+      '전국 중학교 3학년 학생을 우선으로, 그다음 용산구청 관내 중학교 재학생, 이후에는 선착순으로 선정됩니다.',
+  },
+  {
+    id: 4,
+    category: '캠프',
+    question: '참가 신청이 제대로 되었는지 궁금해요!',
+    answer: '신청이 완료되면 등록하신 이메일로 확인 메일이 발송됩니다.',
+  },
+  {
+    id: 5,
+    category: '캠프',
+    question: '참가 신청 선정 결과는 어떻게 확인하나요?',
+    answer: '9월 9일 본교 홈페이지 및 개인 메시지를 통해 안내해드립니다.',
+  },
+  {
+    id: 6,
+    category: '기타',
+    question: '캠프 날 점심이 제공되나요?',
+    answer: '캠프는 오후 1시부터 진행되므로 점심은 제공되지 않습니다.',
+  },
+  {
+    id: 7,
+    category: '기타',
+    question: '다른 궁금한 점은 어떻게 질문하나요?',
+    answer: 'SSF 인스타그램(@sunrin_ssf) DM 또는 오른쪽 연락처로 문의 부탁드립니다.',
+  },
+];

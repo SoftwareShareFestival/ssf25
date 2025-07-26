@@ -1,0 +1,47 @@
+// components/home/sections/faq/style.module.scss
+.container {
+  width: min(100%, $max-width);
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  gap: 50px;
+}
+
+.faqList {
+  width: 100%;
+}
+
+.callContainer {
+  min-width: 350px;
+  height: fit-content;
+  border: 1px solid $color-border;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.callTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: $color-primary;
+}
+
+.phone {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.icon {
+  color: $color-primary;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column !important;
+  }
+
+  .callContainer {
+    width: 100%;
+    min-width: auto;
+  }
+}

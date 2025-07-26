@@ -1,11 +1,10 @@
 import { InformationCard, VStack } from "@/components/ui";
 
-import s from './style.module.scss'
 import { benefitData } from "@/data/benefits";
 
 export default function BenefitSection() {
     return (
-        <VStack fullWidth align={'center'} gap={64} className={s.container}>
+        <VStack fullWidth align={'center'} gap={64}>
             {benefitData.map((card, idx) => (
                 <InformationCard
                     key={idx}

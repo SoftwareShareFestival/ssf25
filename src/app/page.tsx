@@ -3,13 +3,12 @@ import {
 	Schedule,
 	ShowReel,
 	WithClub,
-	Introduce,
 	ClubList,
 	LastYearPhoto,
 } from '@/components/home';
-import { BenefitSection } from '@/components/home/section';
+import { BenefitSection, Introduce } from '@/components/home/section';
+import FAQSection from '@/components/home/section/faq/FAQSection';
 import {
-	FAQ,
 	Footer,
 	Header,
 	Spacer,
@@ -31,7 +30,7 @@ export default function Home() {
 				<BenefitSection />
 				<ClubList />
 				<Schedule />
-				<FAQ />
+				<FAQSection />
 				<Footer />
 			</div>
 		</>

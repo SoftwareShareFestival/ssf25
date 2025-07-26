@@ -4,14 +4,15 @@ import { VStack } from '../vstack';
 interface Props {
 	title: string;
 	description: string;
-	align?: 'start' | 'end' | 'center' | 'stretch';
+	layoutAlign?: 'start' | 'end' | 'center' | 'stretch';
+	textAlign?: 'start' | 'center' | 'end'
 }
 
-export default function Title({ title, description, align }: Props) {
+export default function Title({ title, description, layoutAlign, textAlign = 'center' }: Props) {
 	return (
-		<VStack gap={16} align={align} className={s.container}>
-			<span className={s.title}>{title}</span>
-			<span className={s.description}>{description}</span>
+		<VStack gap={16} align={layoutAlign}>
+			<span className={s.title} style={{textAlign: textAlign}}>{title}</span>
+			<span className={s.description} style={{textAlign: textAlign}}>{description}</span>
 		</VStack>
 	);
 }
