@@ -1,1 +1,1 @@
-export {default as Introduce} from './FAQSection'
+export {default as FAQSection} from './FAQSection'

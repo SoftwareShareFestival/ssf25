@@ -1,13 +1,11 @@
 'use client';
 
-import { Title, VStack } from '@/components/ui';
+import { Title } from '@/components/ui';
 import s from './style.module.scss';
 import cn from 'classnames';
 import { HStack } from '@/components/ui/hstack';
-import Image from 'next/image';
-import Link from 'next/link';
 
-export default function Schedule() {
+export default function ScheduleSection() {
 	return (
 		<section className={s.container}>
 			<Title
@@ -47,17 +45,6 @@ export default function Schedule() {
 					</span>
 				</div>
 			</HStack>
-			{/* <Link
-				href="https://calendar.google.com/calendar/u/0?cid=Njc3ODU2NTY2OWIxMDdiN2E4Mjg4ZTUzZTRiMDNlYzU4NDAyMjc3NTMzN2M4MzVhZDA1Nzk5NzQwYzFiNzdkMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
-				target="_blank"
-			>
-				<Image
-					src={'/calendar.svg'}
-					width={30}
-					height={30}
-					alt="눌러서 구글 캘린더에 일정 등록하기"
-				/>
-			</Link> */}
 		</section>
 	);
 }

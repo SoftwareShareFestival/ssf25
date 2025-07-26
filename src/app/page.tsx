@@ -1,19 +1,15 @@
 import {
-	Hero,
-	Schedule,
-	ShowReel,
-	ClubList,
-	LastYearPhoto,
-} from '@/components/home';
-import { BenefitSection, Introduce } from '@/components/home/section';
-import FAQSection from '@/components/home/section/faq/FAQSection';
-import WithClubSection from '@/components/home/section/with-club/WithClubSection';
-import {
-	Footer,
-	Header,
-	Spacer,
-} from '@/components/ui';
-import { carouselItems } from '@/data/carousel';
+	BenefitSection,
+	ClubListSection,
+	FAQSection,
+	HeroSection,
+	IntroduceSection,
+	LastYearPhotoSection,
+	ScheduleSection,
+	ShowReelSection,
+	WithClubSection,
+} from '@/components/home/section';
+import { Footer, Header, Spacer } from '@/components/ui';
 import s from '@/styles/app/page.module.scss';
 
 export default function Home() {
@@ -21,15 +17,15 @@ export default function Home() {
 		<>
 			<Header />
 			<Spacer height={62} />
-			<Hero />
+			<HeroSection />
 			<div className={s.content}>
-				<WithClubSection items={carouselItems} speed={0.5} />
-				<Introduce />
-				<ShowReel />
-				<LastYearPhoto />
+				<WithClubSection />
+				<IntroduceSection />
+				<ShowReelSection />
+				<LastYearPhotoSection />
 				<BenefitSection />
-				<ClubList />
-				<Schedule />
+				<ClubListSection />
+				<ScheduleSection />
 				<FAQSection />
 				<Footer />
 			</div>

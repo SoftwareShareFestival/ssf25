@@ -7,7 +7,7 @@ import Image from 'next/image';
 import cn from 'classnames';
 import { useEffect, useState, useCallback } from 'react';
 
-export default function LastYearPhoto() {
+export default function LastYearPhotoSection() {
 	const [isMobile, setIsMobile] = useState(false);
 	const [modalOpen, setModalOpen] = useState(false);
 	const [selectedImage, setSelectedImage] = useState<string | null>(null);

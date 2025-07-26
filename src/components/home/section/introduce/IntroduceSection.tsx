@@ -1,7 +1,7 @@
 import { HStack, VStack } from "@/components/ui";
 import s from './style.module.scss'
 
-export default function Introduce() {
+export default function IntroduceSection() {
     return (
         <HStack className={s.container} align="center" justify="between" >
             <VStack

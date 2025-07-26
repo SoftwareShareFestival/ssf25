@@ -3,7 +3,7 @@
 import YouTube from 'react-youtube';
 import s from './style.module.scss';
 
-export default function ShowReel() {
+export default function ShowReelSection() {
     const opts = {
         playerVars: {
             autoplay: 0,

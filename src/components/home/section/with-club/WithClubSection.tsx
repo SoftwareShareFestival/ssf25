@@ -3,18 +3,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { Carousel } from '@/components/ui';
-import { CarouselItem } from '@/data/carousel';
+import { CarouselItem, carouselItems } from '@/data/carousel';
 import s from './style.module.scss';
 
-interface WithClubSectionProps {
-	items: CarouselItem[];
-	speed?: number;
-}
-
-export default function WithClubSection({
-	items,
-	speed = 1,
-}: WithClubSectionProps) {
+export default function WithClubSection() {
 	const renderCarouselItem = (item: CarouselItem) => (
 		<Image
 			src={item.src}
@@ -32,8 +24,8 @@ export default function WithClubSection({
 					8개의 선린인터넷고등학교 전공 동아리와 함께해요
 				</span>
 				<Carousel
-					items={items}
-					speed={speed}
+					items={carouselItems}
+					speed={1}
 					gap={69}
 					renderItem={renderCarouselItem}
 					className={s.carousel}

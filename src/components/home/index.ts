@@ -1,5 +1,0 @@
-export * from './hero'
-export * from './showreel'
-export * from './schedule'
-export * from './camp-list'
-export * from './last-year-photo'

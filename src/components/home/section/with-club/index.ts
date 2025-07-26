@@ -1,1 +1,1 @@
-export {default as WithClub} from './WithClubSection'
+export {default as WithClubSection} from './WithClubSection'

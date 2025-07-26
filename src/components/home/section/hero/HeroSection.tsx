@@ -7,7 +7,7 @@ import cn from 'classnames';
 import Link from 'next/link';
 import { VStack } from '@/components/ui';
 
-export default function Hero() {
+export default function HeroSection() {
 	return (
 		<div className={s.container}>
 			<VStack gap={12} align="center">

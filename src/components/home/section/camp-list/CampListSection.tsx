@@ -20,7 +20,7 @@ const filterButtons: FilterButton[] = [
 	{ key: 'software', label: '소프트웨어과' },
 ];
 
-export default function CampList() {
+export default function CampListSection() {
 	const [activeFilter, setActiveFilter] = useState<FilterType>('all');
 
 	const filteredCamps = campData.filter((camp) => {
