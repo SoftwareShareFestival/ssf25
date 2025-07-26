@@ -4,11 +4,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 
 import s from './style.module.scss';
-
-interface CarouselItem {
-	id: number;
-	src: string;
-}
+import { CarouselItem } from '@/data/carousel';
 
 interface CarouselProps {
 	items: CarouselItem[];
@@ -73,7 +69,9 @@ export default function WithClub({ items, speed = 1 }: CarouselProps) {
 	return (
 		<section className={s.container}>
 			<div className={s.carouselContainer}>
-				<span className={s.title}>8개의 선린인터넷고등학교 전공 동아리와 함께해요</span>
+				<span className={s.title}>
+					8개의 선린인터넷고등학교 전공 동아리와 함께해요
+				</span>
 				<div className={s.carouselTrack} ref={trackRef}>
 					{triplicatedItems.map((item, index) => (
 						<div

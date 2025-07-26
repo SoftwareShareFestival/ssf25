@@ -15,33 +15,16 @@ import {
 	Spacer,
 	VStack,
 } from '@/components/ui';
+import { carouselItems } from '@/data/carousel';
+import s from '@/styles/app/page.module.scss'
 
 export default function Home() {
-	const carouselItems = [
-		{ id: 1, src: '/club/tapie.svg' },
-		{ id: 2, src: '/club/ana.svg' },
-		{ id: 3, src: '/club/creal_black.png' },
-		{ id: 4, src: '/club/para.svg' },
-		{ id: 5, src: '/club/layer7.svg' },
-		{ id: 6, src: '/club/teamlog.svg' },
-		{ id: 7, src: '/club/unifox.png' },
-		{ id: 8, src: '/club/iris.svg' },
-		{ id: 9, src: '/club/layer7.svg' },
-	];
 	return (
 		<>
 			<Header />
 			<Spacer height={62} />
 			<Hero />
-			<div
-				style={{
-					padding: '70px 0 40px 0',
-					display: 'flex',
-					flexDirection: 'column',
-					alignContent: 'center',
-					gap: 169,
-				}}
-			>
+			<div className={s.content}>
 				<WithClub items={carouselItems} speed={0.5} />
 				<Introduce />
 				<ShowReel />
