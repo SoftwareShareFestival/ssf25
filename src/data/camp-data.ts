@@ -186,7 +186,7 @@ export const campData: CampInfo[] = [
     },
     {
         title: "내 기분에 따라 플레이리스트를 추천해주는 AI 만들기",
-        description: "ChatGPT를 활용하여 나와 친구처럼 대화하고, 내 기분에 따라 플레이리스트를 추천해주는 AI를 만들어볼 수 있습니다.",
+        description: "GPT를 기반으로, 단순한 대화를 넘어 친구처럼 소통하며 사용자의 기분에 맞는 플레이리스트를 추천해주는 AI를 직접 제작해봅니다. AI가 어떻게 대화를 이해하고, 감정을 분석해 음악 추천과 같은 맞춤형 서비스를 제공할 수 있는지 체험할 수 있으며, 대화형 인공지능과 실제 서비스 개발 과정을 동시에 경험할 수 있습니다.",
         imageSrc: "/camp/para.png",
         link: {
             share: "https://www.youtube.com/",
@@ -198,11 +198,11 @@ export const campData: CampInfo[] = [
             name: "PARA",
             slug: "para",
             tags: ["AI", "인공지능", "PARA"],
-            description: "Para는 Project Achievement Research AI 라는 뜻을 가진 동아리로 인공지능에 대해 연구하고 활용하여 개발하는 인공지능 서비스 개발 전공 동아리입니다.",
+            description: "PARA는 선린인터넷고등학교의 인공지능 동아리로, 인공지능 모델을 학습·튜닝하고 이를 실제 서비스 제작에 응용할 수 있는 능력을 기르는 데 중점을 두고 있습니다. 파이썬과 AI 기초부터 시작해 LLM, 컴퓨터 비전, FastAPI까지 체계적인 커리큘럼을 통해 실력을 쌓습니다. 더 나아가 이미지 생성, 강화 학습, 논문 리뷰 등 심화 프로젝트와 실전 서비스 제작을 진행하며 한 단계 높은 역량을 갖추어 나갑니다.",
             logo: "/club/para.svg",
             link: {
                 website: "https://sunrin-para.dev",
-                instagram: "https://www.instagram.com/sunrin_para"
+                instagram: "https://www.instagram.com/sunrin._para"
             },
             catchphrase: '인공지능 동아리'
         }
