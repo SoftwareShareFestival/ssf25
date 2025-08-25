@@ -29,8 +29,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/layer7.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/sunrin_layer7",
-            cardnews: "https://www.instagram.com/sunrin_layer7"
+            reels: "https://www.instagram.com/reel/DN8KF_yZI0j/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DOBPpCpS6V6/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#000",
@@ -52,8 +52,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/iris.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/sunrin_ssf",
+            cardnews: "https://www.instagram.com/p/DN8GsekS0BO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#5B80D7",
@@ -75,8 +75,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/teamlog.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DN-vazz5Msq/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DN8MVJMywjc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#EA3E45",
@@ -98,8 +98,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/unifox.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DN-vbH35F3y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DN7wZC7y9Ta/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#FF6D03",
@@ -121,8 +121,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/ana.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DOBUS5K5BqJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DNxFvLpo-LD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#334882",
@@ -144,8 +144,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/creal.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DN-xt3WZJ4-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DN7iCQWI_mD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#1DD8D6",
@@ -167,8 +167,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/tapie.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DNxG9ExZFGp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DN7eExeo2En/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#000",
@@ -190,8 +190,8 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/para.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/",
-            cardnews: "https://www.youtube.com/"
+            reels: "https://www.instagram.com/reel/DN8KJmOZLzE/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+            cardnews: "https://www.instagram.com/p/DN7eqdpIymy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
             color: "#9966FF",

@@ -13,10 +13,10 @@ export default function Link(props: LinkProps) {
 	const { state, link, title, description } = props;
 
 	const handleClick = () => {
-        if (state === 'reels' || state === 'cardnews') {
-            alert('각 동아리의 개성 있는 카드뉴스와 릴스는 8월 25일에 공개됩니다!\n자세한 내용은 인스타그램(@sunrin_ssf)에서 확인해 주세요.');
-            return;
-        }
+        // if (state === 'reels' || state === 'cardnews') {
+        //     alert('각 동아리의 개성 있는 카드뉴스와 릴스는 8월 25일에 공개됩니다!\n자세한 내용은 인스타그램(@sunrin_ssf)에서 확인해 주세요.');
+        //     return;
+        // }
 
         if (state === 'share') {
             const shareUrl = window.location.href;
