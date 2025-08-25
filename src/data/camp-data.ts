@@ -52,7 +52,7 @@ export const campData: CampInfo[] = [
         imageSrc: "/camp/iris.png",
         link: {
             share: "https://www.youtube.com/",
-            reels: "https://www.instagram.com/sunrin_ssf",
+            reels: "https://www.instagram.com/reel/DNxgVKFZH-v/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
             cardnews: "https://www.instagram.com/p/DN8GsekS0BO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
         },
         club: {
