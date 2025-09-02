@@ -14,6 +14,7 @@ import {
 	InformationCard,
 	Spacer,
 	VStack,
+	Timebar,
 } from '@/components/ui';
 
 export default function Home() {
@@ -31,7 +32,8 @@ export default function Home() {
 	return (
 		<>
 			<Header />
-			<Spacer height={62} />
+			<Timebar />
+			<Spacer height={128} />
 			<Hero />
 			<div
 				style={{
