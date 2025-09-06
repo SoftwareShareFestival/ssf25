@@ -18,7 +18,7 @@ export default function Header() {
 					/>
 				</Link>
 				<Link
-					href="https://lu.ma/92qeg481"
+					href="https://sunrint.sen.hs.kr/18605/subMenu.do"
 					style={paperlogy.style}
 					target="_blank"
 				>

@@ -50,6 +50,7 @@ export default function Footer() {
 								<span>조예서</span>
 								<span>박은우</span>
 								<span>김래현</span>
+								<span>강서진</span>
 							</HStack>
 						</VStack>
 						<VStack gap={8}>
