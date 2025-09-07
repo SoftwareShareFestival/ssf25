@@ -20,7 +20,7 @@ export default function Timebar() {
     return (
         <div className={s.time}>
             {timeLeft === '00:00:00' ? (
-                <p className={s.bold}>참가 신청이 마감되었습니다.</p>
+                <p className={s.bold}>참가 신청이 마감되었습니다</p>
             ) : (
                 <p>참가 신청 마감까지 <span className={s.bold}>{timeLeft}</span> 남음</p>
             )}
