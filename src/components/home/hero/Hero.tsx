@@ -2,7 +2,7 @@ import { HStack } from '@/components/ui/hstack';
 import Image from 'next/image';
 
 import s from './style.module.scss';
-import { FilePen } from 'lucide-react';
+import { FilePen, User } from 'lucide-react';
 import cn from 'classnames';
 import Link from 'next/link';
 import { VStack } from '@/components/ui';
@@ -33,14 +33,14 @@ export default function Hero() {
 				</h2>
 			</VStack>
 			<HStack gap={18} className={s.linkContainer}>
-				<Link href={'https://lu.ma/92qeg481'} className={s.submit} target='_blank'>
+				{/* <Link href={'https://lu.ma/92qeg481'} className={s.submit} target='_blank'>
 					<FilePen size={22} />
 					<span>SSF 지원하기</span>
-				</Link>
-				{/* <Link href={'https://sunrint.sen.hs.kr/18605/subMenu.do'} className={s.submit} target='_blank'>
+				</Link> */}
+				<Link href={'https://sunrint.sen.hs.kr/18605/subMenu.do'} className={s.submit} target='_blank'>
 					<User size={22} />
 					<span>합격자 발표</span>
-				</Link> */}
+				</Link>
 				<Link
 					href={'https://www.instagram.com/sunrin_ssf/'}
 					target='_blank'
