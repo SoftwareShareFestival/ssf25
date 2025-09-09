@@ -37,7 +37,7 @@ export default function Hero() {
 					<FilePen size={22} />
 					<span>SSF 지원하기</span>
 				</Link> */}
-				<Link href={'https://sunrint.sen.hs.kr/18605/subMenu.do'} className={s.submit} target='_blank'>
+				<Link href={'https://sunrint.sen.hs.kr/211967/subMenu.do'} className={s.submit} target='_blank'>
 					<User size={22} />
 					<span>합격자 발표</span>
 				</Link>
